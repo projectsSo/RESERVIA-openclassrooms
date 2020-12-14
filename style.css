@@ -5,3 +5,18 @@
       marge : 0 ;
       box-dimensionnement : border-box;
     }
+    .m-left{
+      float: left;
+}
+    .m-right{
+      float: right;
+    }
+    .menu{
+width: 100%; 
+height: 66px;
+line-height: 66px;
+}
+.m-right{
+  text-decoration: none;
+  color: yellowgreen;
+}
