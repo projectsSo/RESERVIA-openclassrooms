@@ -1,22 +1,50 @@
 /* Feuille de style pour le projet 2 reservia */
 
-* {
-    famille de polices: 'Raleway', sans-serif;
-      marge : 0 ;
-      box-dimensionnement : border-box;
-    }
-    .m-left{
-      float: left;
+body {
+  famille de polices: 'Raleway', sans-serif;
+    marge: 0 ;
+    box-sizing: border-box
+  }
+
+  /* HEADER */
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+
 }
-    .m-right{
-      float: right;
-    }
-    .menu{
-width: 100%; 
-height: 66px;
-line-height: 66px;
-}
-.m-right{
-  text-decoration: none;
-  color: yellowgreen;
-}
+ 
+  a{
+    color: #0065FC;
+    text-decoration: none;
+    
+  }
+
+  #black{
+    color: black;
+  }
+
+  header nav{
+    display: flex;
+    align-items: center;
+    
+  }
+
+  nav ul{
+    align-items: center;
+    align-items: flex-end;
+    
+    
+  }
+  
+
+
+  
+  
