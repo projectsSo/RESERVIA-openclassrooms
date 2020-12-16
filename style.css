@@ -1,50 +1,71 @@
 /* Feuille de style pour le projet 2 reservia */
 
 body {
-  font-family: 'Raleway', sans-serif;
-    margin: 0 ;
-    box-sizing: border-box
-  }
-
-  /* HEADER */
-
-  header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    
-
-}
- 
-  a{
-    color: #0065FC;
-    text-decoration: none;
-    
-  }
-
-  #black{
-    color: black;
-  }
-
-  header nav{
-    display: flex;
-    align-items: center;
-    
-  }
-
-  nav ul{
-    align-items: center;
-    align-items: flex-end;
-    
-    
-  }
+    font-family: 'Raleway', sans-serif;
+      margin: 0 ;
+      box-sizing: border-box
+    }
   
-
-
+    /* HEADER */
   
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 2px 0;
+      
+  
+  }
+   
+    a{
+      color: #0065FC;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: 0.9;
+      
+    }
+    a:hover{
+        opacity: 1;
+    }
+  
+  
+    #black{
+      color: black;
+    }
+  
+    header nav{
+      display: flex;
+     }
+  
+     header nav li{
+         margin: 0 15px;
+      
+       
+      
+      align-items: center;
+      align-items: flex-end;
+      list-style: none;
+      
+      
+    }
+    @media (max-with: 1000px){
+        header{
+            padding: 20px 50px;
+        }
+    }
+    @media (max-width: 700px){
+        header{
+            flex-direction: column;
+        }
+    }
+    
+  
+  
+    
+    
   
