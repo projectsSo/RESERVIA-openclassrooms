@@ -38,9 +38,8 @@ a:hover {
 header nav {
   display: flex;
   align-items: center;
-  grid-area: navbar;
+ 
 }
-
 
 header nav li {
   margin: 0 15px;
