@@ -9,7 +9,7 @@ body {
 
 /* HEADER */
 
-header {
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,24 +26,27 @@ header nav {
   align-items: center;
   justify-content: flex-end;
   margin-right: 120px;
-  position: sticky;
+  position: sticky; /*Pour faire apparaitre le menu en permanence*/
+}
+
+.border-top {
   border-top: solid;
-  
-  
+  color: #0065fc; /*Apparait au-dessus d'hebergement*/
 }
 
 header nav ul li {
-  list-style-type: none;
+  list-style-type: none; /*supprime les petits points*/
   display: inline-block;
 }
 
 header nav ul li a {
   color: #0065fc;
-  text-decoration: none;
+  text-decoration: none; /*supprime les traits en dessous*/
   padding: 50px;
   cursor: pointer;
   opacity: 0.9;
 }
+
 header nav ul li:hover a {
   color: midnightblue;
 }
@@ -62,4 +65,22 @@ header nav ul li:hover a {
   header {
     flex-direction: column;
   }
+}
+
+/*Premiere section*/
+
+.searchheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+  margin: 100px 50px;
+  height: 200px; /* Hauteur pour que les éléments aient la place de bouger en responsive */
+  display: flex;
+}
+
+p {
+  
+  margin: 0;
+  height: 0;
 }
