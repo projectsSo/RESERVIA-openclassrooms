@@ -1,5 +1,9 @@
 /* Feuille de style pour le projet 2 reservia */
 
+html{
+  line-height:1.15;-webkit-text-size-adjust:100%
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -32,6 +36,7 @@ header nav {
 .border-top {
   border-top: solid;
   color: #0065fc; /*Apparait au-dessus d'hebergement*/
+  
 }
 
 header nav ul li {
