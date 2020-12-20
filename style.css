@@ -1,12 +1,13 @@
 /* Feuille de style pour le projet 2 reservia */
 
-html{
-  line-height:1.15;-webkit-text-size-adjust:100%
+html {
+  line-height: 1.15; /*hauteur de la boite d'une ligne*/
+  -webkit-text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
+
   margin: 0;
   box-sizing: border-box;
 }
@@ -14,14 +15,17 @@ body {
 /* HEADER */
 
 .header {
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+  margin: auto;
+}
+
+.logoreservia {
   margin: 45px 50px;
 }
 
@@ -34,9 +38,8 @@ header nav {
 }
 
 .border-top {
-  border-top: solid;
-  color: #0065fc; /*Apparait au-dessus d'hebergement*/
-  
+  border-top: 3px solid;
+  color: #0065fc;
 }
 
 header nav ul li {
@@ -48,12 +51,6 @@ header nav ul li a {
   color: #0065fc;
   text-decoration: none; /*supprime les traits en dessous*/
   padding: 50px;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-header nav ul li:hover a {
-  color: midnightblue;
 }
 
 #black {
@@ -74,6 +71,13 @@ header nav ul li:hover a {
 
 /*Premiere section*/
 
+.main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
 .searchheader {
   display: flex;
   flex-direction: column;
@@ -85,7 +89,6 @@ header nav ul li:hover a {
 }
 
 p {
-  
   margin: 0;
   height: 0;
 }
