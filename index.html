@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -9,18 +10,19 @@
       href="https://fonts.googleapis.com/css2? family = Raleway: ital @ 1 & display = swap"
       rel="feuille de style"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/2a6d7ea1c5.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-
     <!--HEADER-->
 
-
-<header class="header">
+    <header class="header">
       <img class="logoreservia" src="images/logo/Reservia.svg" "alt=reservia" />
       <nav>
         <ul>
@@ -41,9 +43,24 @@
           <p>En plein centre ville ou en pleine nature</p>
         </header>
 
-        <!--IMPUT-->
-          <input marseille>
-        </header>
+        <form class="searchForm" method="GET">
+          <!--class=searchForm=meme hauteur logo-->
+          <span><i class="fas fa-map-marker-alt"></i></span>
+          <input
+            type="text"
+            class="input-search"
+            name="ville"
+            placeholder="Marseille, France"
+          />
+          <button type="submit" class="button-search">Rechercher</button>
+        </form>
+
+        <!--Search-filters-->
+        <div class="searchfilters">
+          <h2>Filtres</h2>
+          <i class="fas fa-money-bill-wave"></i>
+        </div>
+
       </section>
     </main>
     <!--MAIN-->

@@ -21,12 +21,13 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
+  padding-left: 5px;
+  padding-right: 35px;
   margin: auto;
 }
 
 .logoreservia {
-  margin: 45px 50px;
+  margin: 40px 100px;
 }
 
 header nav {
@@ -37,7 +38,7 @@ header nav {
   position: sticky; /*Pour faire apparaitre le menu en permanence*/
 }
 
-.border-top {
+.border-top:hover {
   border-top: 3px solid;
   color: #0065fc;
 }
@@ -72,9 +73,8 @@ header nav ul li a {
 /*Premiere section*/
 
 .main {
-  max-width: 1440px;
-  margin: auto;
-  padding: 0 2rem;
+  margin: 40px 100px;
+
   box-sizing: border-box;
 }
 
@@ -83,12 +83,92 @@ header nav ul li a {
   flex-direction: column;
   justify-content: flex-start;
   justify-content: center;
-  margin: 100px 50px;
-  height: 200px; /* Hauteur pour que les éléments aient la place de bouger en responsive */
-  display: flex;
+  margin-left: 0px;
+  height: 70px; /* Hauteur pour que les éléments aient la place de bouger en responsive */
+}
+
+h1 {
+  margin-left: 0%;
+  position: absolute;
+  top: 15%;
 }
 
 p {
   margin: 0;
   height: 0;
 }
+
+.searchForm {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+
+/* logo gps*/
+
+.fas.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  padding: 1rem 1.25rem;
+  border-radius: 25% 10%;
+  text-align: center;
+}
+
+.searchForm {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.input-search {
+  border-right: none;
+  border-left: none;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+
+.input-search::placeholder {
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  color: #00000069;
+}
+
+.button-search {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.25rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.searchfilters {
+  
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .fas.fa-money-bill-wave {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 3%;
+    background-color:#DEEBFF ;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #DEEBFF ;
+  
+  }
+  
+    
