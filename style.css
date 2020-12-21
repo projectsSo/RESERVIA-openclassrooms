@@ -3,6 +3,7 @@
 html {
   line-height: 1.15; /*hauteur de la boite d'une ligne*/
   -webkit-text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
+  font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 }
 
 .logoreservia {
-  margin: 40px 100px;
+  margin: 2.5em 6em;
 }
 
 header nav {
@@ -109,7 +110,7 @@ p {
 .fas.fa-map-marker-alt {
   background-color: #f2f2f2;
   padding: 1rem 1.25rem;
-  border-radius: 25% 10%;
+  border-radius: 5% 10%;
   text-align: center;
 }
 
@@ -161,14 +162,39 @@ p {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: 3%;
-    background-color:#DEEBFF ;
+    margin-left: 0.5%;  /*position par rapport au mot filtres*/
+    background-color: #DEEBFF ;
+    color: blue;
     cursor: pointer;
-    width: 40px;
+    
+    position: relative; left: 40px; /*Permet d'inserer le logo dans economique*/
+    width : 45px;              /*de width à border radius fait un cercle*/
+    height: 45px;
+    border-radius: 20px;
+  }
+
+  .searcheconomique {
+    display: inline-flex; /*deplace economique*/
+    max-width: 100%;
+    cursor: pointer;
+    align-items: center;
+    text-align: center
+    border-right #f2f2f2 0.3rem solid;
+    box-sizing: border-box
+    padding-right: 2%
+    border-top: #f2f2f2 2px solid;
+    border-bottom: #f2f2f2 0.3rem solid;
+    width: 40px;                     /*de width à border-radius fait un cercle*/
     height: 40px;
     border-radius: 20px;
-    background: #DEEBFF ;
-  
+    width: 13rem;                /*longueur border-radius*/
+    font-size: 1.1rem;    /*epaisseur caractere*/
+    font-weight: bold; /*graisse utilisée*/
+    font-family: "Raleway", "Sans serif";
+    justify-content: center;
+    padding: 30rem
+    border-radius: 30px;
+    
+    position; 
   }
   
-    
