@@ -29,6 +29,7 @@ body {
 
 .logoreservia {
   margin: 2.5em 6em;
+  
 }
 
 header nav {
@@ -76,7 +77,8 @@ header nav ul li a {
 .main {
   margin: 40px 100px;
 
-  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .searchheader {
@@ -151,30 +153,37 @@ p {
   cursor: pointer;
 }
 
+.filters {
+  display: inline-flex ;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+}
+
 .searchfilters {
-  
     display: flex;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
+    margin-top: 2rem; /*espace avec Marseille*/
+    text-align: center;
+    max-width: 100%;
+    }
 
   .fas.fa-money-bill-wave {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-align: center;
     margin-left: 0.5%;  /*position par rapport au mot filtres*/
     background-color: #DEEBFF ;
     color: blue;
     cursor: pointer;
-    
+    justify-content: center;   /*centre logo money dans le cercle*/
     position: relative; left: 40px; /*Permet d'inserer le logo dans economique*/
-    width : 45px;              /*de width à border radius fait un cercle*/
+    width : 45px;              /*De width à border radius pour faire un cercle*/
     height: 45px;
     border-radius: 20px;
   }
 
   .searcheconomique {
-    display: inline-flex; /*deplace economique*/
+    display: inline-flex; /*Déplace le mot economique*/
     max-width: 100%;
     cursor: pointer;
     align-items: center;
@@ -184,8 +193,9 @@ p {
     padding-right: 2%
     border-top: #f2f2f2 2px solid;
     border-bottom: #f2f2f2 0.3rem solid;
-    width: 40px;                     /*de width à border-radius fait un cercle*/
-    height: 40px;
+    width: 45px;                              /*De width à border-radius pour faire un cercle*/
+    height: 45px;                                      
+    
     border-radius: 20px;
     width: 13rem;                /*longueur border-radius*/
     font-size: 1.1rem;    /*epaisseur caractere*/
@@ -194,7 +204,6 @@ p {
     justify-content: center;
     padding: 30rem
     border-radius: 30px;
-    
-    position; 
-  }
+    position:
+    }
   
