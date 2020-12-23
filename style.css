@@ -163,14 +163,20 @@ p {
     max-width: 100%;
     }
 
-    .filters {
+ .money, .child, .famililal, .romantico, .dogi {
+  display: flex;
+  aligns-items: center;
+  margin-left: 0.1%;
+
+ }
+    .filters {               /*A SUPPRIMER*/
     align-items: center;
     text-align: center;
     max-width: 100%;
     }
 
 
-  .fas.fa-money-bill-wave {
+  .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -185,7 +191,7 @@ p {
     border-radius: 20px;
   }
 
-  .searcheconomique {
+  .eco, .familial, .romantique, .animaux {
     display: inline-flex; /*Déplace le mot economique*/
     max-width: 100%;
     cursor: pointer;
@@ -209,4 +215,8 @@ p {
     border-radius: 30px;
     position:
     }
+  .animaux {
+    width: 16rem;         /*longueur border-radius*/    
+  }
+    
   
