@@ -176,7 +176,7 @@ p {
     }
 
 
-  .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {
+  .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {  /*ne fonctionne pas sans le deuxiéme petit point*/
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -191,7 +191,7 @@ p {
     border-radius: 20px;
   }
 
-  .eco, .familial, .romantique, .animaux {
+  .eco, .familial, .romantique, .animaux {                              /*ne fonctionne pas sans le deuxiéme petit point*/
     display: inline-flex; /*Déplace le mot economique*/
     max-width: 100%;
     cursor: pointer;
