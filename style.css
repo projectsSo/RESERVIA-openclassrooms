@@ -1,7 +1,7 @@
 /* Feuille de style pour le projet 2 reservia */
 
 html {
-  line-height: 1.15; /*hauteur de la boite d'une ligne*/
+  
   -webkit-text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
   font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
 }
@@ -10,7 +10,7 @@ body {
   font-family: "Raleway", sans-serif;
 
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
 }
 
 /* HEADER */
@@ -68,24 +68,14 @@ header nav ul li a {
   color: black;
 }
 
-@media (max-with: 1000px) {
-  header {
-    padding: 20px 50px;
-  }
-}
 
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-}
 
 /*Premiere section*/
 
 .main {
   margin: 40px 100px;
-
-  display: flex;
+display: block;
+  
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
 }
 
@@ -304,7 +294,7 @@ margin-top: inherit;
 .marseillou{
   display: flex;
     align-items: flex-end;
-    height: 19rem;
+    height: 1.5rem;
   
  
   }
