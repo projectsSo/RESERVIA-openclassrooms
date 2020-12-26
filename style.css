@@ -291,7 +291,7 @@ margin-top: inherit;
 
 
 
-.marseillou{
+.marseille-hosting {
   display: flex;
     align-items: flex-end;
     height: 1.5rem;
@@ -299,6 +299,19 @@ margin-top: inherit;
  
   }
 
+  .cannebiere {
+    display: block;
+  }
+
+.cannebiere-img {
 
 
+  border: white solid 7px;
+  background-color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa;
+  object-fit: cover;
+  width: 300px;
+}
 
