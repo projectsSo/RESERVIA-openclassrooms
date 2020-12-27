@@ -336,11 +336,19 @@ height: 620px;
 
 .port-img, .mouettes-img {
   margin-left: 5.5%;
+ 
 }
 
+.port-img {
+  position: absolute;
+	top: 600px;
+	left: 390px;
+}
 .mouettes-img {
   
- 
+  position: relative;
+				top: 100px;
+				left: 160px;
   
   
 }
