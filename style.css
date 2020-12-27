@@ -286,10 +286,22 @@ margin-top: inherit;
   flex-direction: column;
   justify-content: flex-start;
   justify-content: center;
+  justify-content: space-between;
+ 
+
+background-color: #F2F2F2;
+ border: 5px;
+ border-bottom: 2px;
+ border-radius: 16px;
+ width: 68%;
+height: 620px;
+ margin: 30px 10px 0 0;
+
+ display: flex;   /*300 a 301 a verifier*/
+ flex-wrap: wrap;
+  
   
 }
-
-
 
 .marseille-hosting {
   display: flex;
@@ -299,13 +311,20 @@ margin-top: inherit;
  
   }
 
-  .cannebiere {
-    display: block;
+.auberge-cannebiere, .hotel-du-port, .hotel-des-mouettes {
+  display: inline-block; vertical-align: ;
+
+
+    width: 245px;
+          height: 130px;
+          margin: 30px 15px 80px 30px;   /*a verifier 318 a 321*/
+          cursor: pointer;
+          
   }
 
-.cannebiere-img {
+.cannebiere-img, .port-img, .mouettes-img  {
 
-
+  
   border: white solid 7px;
   background-color: white;
   border-radius: 30px;
@@ -315,3 +334,34 @@ margin-top: inherit;
   width: 300px;
 }
 
+.port-img, .mouettes-img {
+  margin-left: 5.5%;
+}
+
+.mouettes-img {
+  
+ 
+  
+  
+}
+
+.tarif-cannebiere {
+margin-top: 75%;
+}
+
+.note-hosting {
+  
+  color: #F2F2F2;
+  color: #0065FC;
+}
+
+
+
+
+.tarif-hotel-du-port {
+  margin-top: 75%;
+}
+
+.hotel-des-mouettes {
+  display: inline-block; vertical-align: ;
+}
