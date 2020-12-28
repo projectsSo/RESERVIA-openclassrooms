@@ -247,7 +247,7 @@ margin-top: inherit;
 .familial:hover,
 .romantique:hover,
 .animaux:hover {
-  background-color: lightsteelblue;
+  background-color: #deebff;
 }
 
 /*info*/
@@ -364,13 +364,13 @@ top: 550px;
 
 .port-img {
   position: absolute;
-	top: 550px;
+	top: 548px;
 	left: 390px;
 }
 .mouettes-img {
   
   position: relative;
-top: 53px;
+top: 54px;
 left: 110px;
   
   
@@ -382,14 +382,14 @@ margin-top: 92%;
 
 .tarif-hotel-du-port {
   position: absolute;
-	top: 820px;
-	left: 495px;
+	top: 75%;
+	left: 33%;
 }
 
 .tarif-hotel-les-mouettes {
   position: relative;
-	top: 247%;
-  left: 74%;
+	top: 147%;
+  left: 51%;
 }
 
 
