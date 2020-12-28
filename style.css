@@ -28,7 +28,7 @@ body {
 }
 
 .logoreservia {
-  margin: 2.5em 6em;
+  margin: 2.5em 16.5em;
 }
 
 header nav {
@@ -73,7 +73,7 @@ header nav ul li a {
 /*Premiere section*/
 
 .main {
-  margin: 40px 100px;
+  margin: 40px 270px;
 display: block;
   
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
@@ -158,9 +158,10 @@ p {
 .searchfilters {
   display: flex;
   align-items: center;
-  text-align: center;
+  
   max-width: 100%;
   margin-top: 1.5rem;   /*espace avec Marseille*/
+  margin-left: 0.01rem;
 }
 
 .filtres{
@@ -173,27 +174,28 @@ margin-top: inherit;
 .romantico,
 .dogi {
   display: flex;
-  aligns-items: center;
-  margin-left: 0.1%;
+  align-items: center;
+  margin-left: -1%;
 }
 
 .fas.fa-money-bill-wave,            /*Ne fonctionne pas sans le deuxiéme petit point*/               
 .fas.fa-child,
 .fas.fa-heart,
 .fas.fa-dog {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  text-align: center;
-  margin-left: 0.5%; /*Position par rapport au mot filtres*/
+  
+  margin-left: 0.01%; /*Position par rapport au mot filtres*/
   background-color: #deebff;
   color: blue;
   cursor: pointer;
   justify-content: center; /*centre logo money dans le cercle*/
   position: relative;
-  left: 53px; /*Permet d'inserer le logo dans economique*/
+  left: 36px; /*Permet d'inserer le logo dans economique*/
   width: 54px; /*De width à border radius pour faire un cercle*/
   height: 50px;
   border-radius: 28px;
+ 
 }
 
 .eco,
@@ -207,29 +209,38 @@ margin-top: inherit;
   border-radius: 30px;
   border-bottom: #f2f2f2 0.2rem solid;
   border-top: #f2f2f2 0.2rem solid;
-  border-right: #f2f2f2 0.2rem solid;
+  
   padding-left: 2.5rem; /*marge à l'interieur des border-radius*/
   height: 45px;
   justify-content: center; /*centre le mot economique dans le border radius*/
   font-size: 1.1rem; /*epaisseur caractere*/
   font-weight: bold; /*graisse utilisée*/
   font-family: "Raleway", "Sans serif";
+  
 }
 
 .eco {
   width: 9rem; /*longueur border-radius*/
+  position: relative;
+  left: -1rem;
 }
 
 .familial {
   width: 7.5rem;
+  position: relative;
+  left: -1rem;
 }
 
 .romantique {
   width: 8.8rem;
+  position: relative;
+  left: -1rem;
 }
 
 .animaux {
   width: 12rem;
+  position: relative;
+  left: -1rem;
 }
 
 .eco:hover,
@@ -280,7 +291,9 @@ margin-top: inherit;
 /*Deuxiéme section*/
 
 .location {
-  
+
+  display: flex;   /*300 a 301 a verifier*/
+ flex-wrap: wrap;
   margin-top: 1.5rem; /*Margin avec search-filters*/
   align-self: center;
   flex-direction: column;
@@ -289,87 +302,100 @@ margin-top: inherit;
   justify-content: space-between;
  
 
-background-color: #F2F2F2;
- border: 5px;
+
+ 
+}
+
+#location {
+  background-color: #F2F2F2;
+ border: 20px;
  border-bottom: 2px;
  border-radius: 16px;
  width: 68%;
 height: 620px;
- margin: 30px 10px 0 0;
 
- display: flex;   /*300 a 301 a verifier*/
- flex-wrap: wrap;
-  
-  
 }
 
 .marseille-hosting {
   display: flex;
     align-items: flex-end;
     height: 1.5rem;
-  
+  margin-left: 34px;
  
   }
 
 .auberge-cannebiere, .hotel-du-port, .hotel-des-mouettes {
-  display: inline-block; vertical-align: ;
+  
 
-
-    width: 245px;
-          height: 130px;
-          margin: 30px 15px 80px 30px;   /*a verifier 318 a 321*/
-          cursor: pointer;
+  width: 245px;
+  height: 130px;
+  margin: 30px 15px 80px 30px;   /*a verifier 318 a 321*/
+  cursor: pointer;
           
   }
 
 .cannebiere-img, .port-img, .mouettes-img  {
 
   
-  border: white solid 7px;
+  border: white solid 70px;
+  border-top: white solid 7px;
+  border-left: white solid 7px;
+  border-right: white solid 7px;
   background-color: white;
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa;
   object-fit: cover;
-  width: 300px;
+  width: 243px;        /*Dimension image, width et height*/
+  height: 118px;
 }
 
-.port-img, .mouettes-img {
-  margin-left: 5.5%;
+.port-img { 
+  margin-left: 11%;
  
+}
+
+
+
+.cannebiere-img {
+  position: absolute;
+top: 550px;
 }
 
 .port-img {
   position: absolute;
-	top: 600px;
+	top: 550px;
 	left: 390px;
 }
 .mouettes-img {
   
   position: relative;
-				top: 100px;
-				left: 160px;
+top: 53px;
+left: 110px;
   
   
 }
 
 .tarif-cannebiere {
-margin-top: 75%;
+margin-top: 92%;
 }
+
+.tarif-hotel-du-port {
+  position: absolute;
+	top: 820px;
+	left: 495px;
+}
+
+.tarif-hotel-les-mouettes {
+  position: relative;
+	top: 247%;
+  left: 74%;
+}
+
+
 
 .note-hosting {
   
   color: #F2F2F2;
   color: #0065FC;
-}
-
-
-
-
-.tarif-hotel-du-port {
-  margin-top: 75%;
-}
-
-.hotel-des-mouettes {
-  display: inline-block; vertical-align: ;
 }
