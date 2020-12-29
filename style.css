@@ -300,7 +300,7 @@ margin-top: inherit;
  border-bottom: 2px;
  border-radius: 16px;
  width: 68%;
-height: 620px;
+height: 670px;
 
 }
 
@@ -345,18 +345,18 @@ height: 620px;
 
 .cannebiere-img {
   position: absolute;
-top: 550px;
+top: 34rem;
 }
 
 .port-img {
   position: absolute;
-	top: 548px;
-	left: 390px;
+	top: 34rem;
+	left: 24.1rem
 }
 
 .mouettes-img {
 position: relative;
-top: 54px;
+top: 3.2rem;
 left: 110px;
 }
 
@@ -364,21 +364,21 @@ left: 110px;
 
 .tarif-cannebiere {
 position: relative;
-top: 62%;
+top: 47%;
 left: 9%;
 line-height: 1.4;             /*hauteur de l'interligne par rapport à la police*/
 }
 
 .tarif-hotel-du-port {
   position: absolute;
-	top: 75%;
+	top: 43rem;
   left: 33%;
   line-height: 1.4;
 }
 
 .tarif-hotel-les-mouettes {
   position: relative;
-	top: 146%;
+	top: 149%;
   left: 54%;
   line-height: 1.4;
 }
@@ -387,7 +387,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
 
 .star1 {
   position: relative;
-  top: 102%;
+  top: 82%;
     left: 8%;
   }
   
@@ -426,14 +426,14 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     justify-content: space-between;
   }
   
-  .hotel-de-la-mer {
+  .hotel-de-la-mer, .auberge-le-panier {
     width: 245px;
     height: 130px;
     margin: 30px 15px 80px 30px;   /*a verifier 318 a 321*/
     cursor: pointer;
   }
   
-   .mer-img {
+   .mer-img, .panier-img {
   
       border: white solid 70px;          /* Encadrement blanc image*/
       border-top: white solid 7px;
@@ -448,15 +448,21 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
       object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
       width: 255px;
     }
-  
     .mer-img {
-    position: absolute;
-    top: 805px;
-    left: 295px;
-    width: 255px; 
-    height: 127px;
-    object-fit: cover;
-    }
+      position: absolute;
+      top: 805px;
+      left: 295px;
+      width: 255px;   /*De with à object-fit pour dimension image que height=image deformée*/
+      height: 127px;
+      object-fit: cover;
+      }
+    
+      .panier-img {
+        position: absolute;
+        top: 805px;
+        left: 31.5%;
+        height: 127px;
+      }
 
     .tarif-hotel-de-la-mer {
       position: absolute;
@@ -471,4 +477,10 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     left: 17%;
     }
   
+    .tarif-auberge-le-panier {
+      position: absolute;
+      top: 104%;
+      left: 32.9%;
+      line-height: 1.4;      
+    }
     
