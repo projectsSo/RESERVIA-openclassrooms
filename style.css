@@ -286,7 +286,7 @@ margin-top: inherit;
 .location {
   display: flex;   /*300 a 301 a verifier*/
   flex-wrap: wrap;
-  margin-top: 1.5rem; /*Margin avec search-filters*/
+  margin-top: 1.5rem; /*Margin avec info*/
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -378,38 +378,25 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
 
 .tarif-hotel-les-mouettes {
   position: relative;
-	top: 149%;
+	top: -1.8rem;
   left: 54%;
   line-height: 1.4;
 }
 
 
 
-.star1 {
-  position: relative;
-  top: 82%;
-    left: 8%;
-  }
+
   
-  .star2 {
-    position: absolute;
-    top: 81%;
-    left: 33%;
   
-  }
   
-  .star3 {
-    position: relative;
-    top: 186%;
-    left: 54%;
-  }
+ 
   
   
   .fas.fas.fa-star {
     color: #0065FC;
   }
   
-  #grey {
+  .fas.fas.fa-star[data-active="false"] {
     color: #D7DBDF
   }
   
@@ -426,14 +413,18 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     justify-content: space-between;
   }
   
-  .hotel-de-la-mer, .auberge-le-panier {
+  .hotel-de-la-mer, .Auberge-le-panier, .hôtel-chez-Amina {
     width: 245px;
     height: 130px;
     margin: 30px 15px 80px 30px;   /*a verifier 318 a 321*/
     cursor: pointer;
   }
-  
-   .mer-img, .panier-img {
+  .ancre {
+    color: black;
+    text-decoration: none;
+  }
+
+   .mer-img, .panier-img, .amina-img {
   
       border: white solid 70px;          /* Encadrement blanc image*/
       border-top: white solid 7px;
@@ -448,11 +439,12 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
       object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
       width: 255px;
     }
+
     .mer-img {
       position: absolute;
       top: 805px;
       left: 295px;
-      width: 255px;   /*De with à object-fit pour dimension image que height=image deformée*/
+      width: 256px;   /*De with à object-fit pour dimension image que height=image deformée*/
       height: 127px;
       object-fit: cover;
       }
@@ -464,6 +456,17 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
         height: 127px;
       }
 
+      .amina-img {
+        height: 8rem;
+        object-fit: cover;
+        max-width: 100%;
+        width: 13.5%;        /*largeur*/
+        max-height: 100%;
+        position: absolute;
+        top: 805px;
+        left: 890px;
+        }
+
     .tarif-hotel-de-la-mer {
       position: absolute;
       top: 104%;
@@ -471,11 +474,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
       line-height: 1.4;             /*hauteur de l'interligne par rapport à la police*/
     }
 
-    .star4 {
-    position: absolute;
-    top: 109%;
-    left: 17%;
-    }
+   
   
     .tarif-auberge-le-panier {
       position: absolute;
@@ -484,3 +483,98 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
       line-height: 1.4;      
     }
     
+    .tarif-hotel-Amina {
+      position: absolute;
+      top: 104%;
+      left: 49%;
+      line-height: 1.4;
+    }
+
+    .more {
+      position: absolute;
+      top: 118%;
+      left: 16%;
+         
+          margin: 25px 60 60 35px;
+          font-weight: bold;
+          font-size: 1.2em; 
+
+    }
+
+    /*ASIDE*/
+    .populaire {
+    display: block;
+
+    position: absolute;
+    top: 51%;
+    left: 65%;
+    align-self: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    }
+
+    #cadre-grey {
+      background-color: #F2F2F2;    /* Arriére-plan gris*/
+      border: 20px;
+      border-bottom: 2px;
+      border-radius: 16px;
+      width: 26%;
+     height: 670px;
+    }
+
+    .most-popular {
+      display: flex;
+      position: absolute;
+    top: 3%;
+    left: 7%;
+    }
+
+    .fas.fa-chart-line {
+    position: absolute;
+    left: 179%;
+    }
+
+    .soleil-img {
+      border: white solid 70px;          /* Encadrement blanc image*/
+      border-top: white solid 7px;
+      border-left: white solid 7px;
+      border-right: white solid 290px;
+      border-bottom: white solid 7px;
+      background-color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
+      
+      object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+      
+      margin-left: 1.7rem;
+      
+      height: 10rem;
+      object-fit: cover;
+      max-width: 100%;
+      width: 28%;        /*largeur*/
+      max-height: 100%;
+     
+    }
+
+    .soleil-img {
+      position: absolute;
+      top: 92px;
+      left: 0.01%;
+    }
+
+    .tarif-hotel-soleil-matin {
+      position: absolute;
+      top: 117px;
+      left: 39%;
+    }
+
+    .star1 {
+      position: absolute;
+      top: 35%;
+      left: 39%;
+    }
+    
+   
