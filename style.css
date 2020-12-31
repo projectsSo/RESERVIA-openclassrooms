@@ -504,7 +504,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     /*ASIDE*/
     .populaire {
     display: block;
-
+    
     position: absolute;
     top: 51%;
     left: 65%;
@@ -527,7 +527,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     .most-popular {
       display: flex;
       position: absolute;
-    top: 3%;
+    top: 1.7%;
     left: 7%;
     }
 
@@ -536,7 +536,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     left: 179%;
     }
 
-    .soleil-img {
+    .soleil-img, .eau-img, .bleu-img {
       border: white solid 70px;          /* Encadrement blanc image*/
       border-top: white solid 7px;
       border-left: white solid 7px;
@@ -551,7 +551,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
       
       margin-left: 1.7rem;
       
-      height: 10rem;
+      height: 8.2rem;
       object-fit: cover;
       max-width: 100%;
       width: 28%;        /*largeur*/
@@ -561,20 +561,124 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
 
     .soleil-img {
       position: absolute;
-      top: 92px;
+      top: 79px;
       left: 0.01%;
     }
 
+    .eau-img {
+      position: absolute;
+      top: 275px;
+      left: 0.01%;
+    }
+
+    .bleu-img {
+      position: absolute;
+      top: 475px;
+      left: 0.01%;
+    }
+
+
     .tarif-hotel-soleil-matin {
       position: absolute;
-      top: 117px;
-      left: 39%;
+      top: 16%;
+      left: 38%;
+    }
+    .tarif-auberge-de-l-eau {
+      position: relative;
+      top: 19rem;
+      left: 11.5rem;
+    }
+
+    .tarif-hotel-bleu {
+      position: relative;
+      top: 27rem;
+      left: 11.6rem;
     }
 
     .star1 {
       position: absolute;
-      top: 35%;
-      left: 39%;
+      top: 29%;
+      left: 38%;
     }
-    
+    .star2 {
+      position: absolute;
+      top: 58%;
+      left: 38%;
+    }
+    .star3 {
+      position: absolute;
+      top: 87%;
+      left: 38%;
+    }
+
+    /*Troisiéme et derniére section*/
+   .activités {
+    display: flex;   
+    flex-wrap: wrap;
+    margin-top: 1.5rem; /*Margin avec */
+    align-self: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+  }
    
+   .vieux-port-img {
+    
+    border-bottom: white solid 68px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
+    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+    position: absolute;
+    height: 30%;
+    width: 16.4%;
+    object-fit: cover;
+  
+   
+   }
+
+  .title-port {
+    position: absolute;
+    top: 185%;
+    left: 15.5%
+  }
+  .fort-img {
+    border-bottom: white solid 62px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
+    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+    height: 12rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 17.5%;        /*largeur*/
+    max-height: 100%;
+   position: absolute;
+   top: 134%;
+   left: 33%
+  }
+  .title-fort {
+    position: absolute;
+   top: 158%;
+   left: 34%
+  }
+  .îles-du-Frioul-img {
+    border-bottom: white solid 62px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
+    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+    height: 9rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 17.5%;        /*largeur*/
+    max-height: 100%;
+   position: absolute;
+   top: 168.2%;
+   left: 33%
+  
+  }
