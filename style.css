@@ -641,7 +641,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
 
   .title-port {
     position: absolute;
-    top: 185%;
+    top: 183.5%;
     left: 15.5%
   }
   .fort-img {
@@ -662,7 +662,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
   }
   .title-fort {
     position: absolute;
-   top: 158%;
+   top: 159%;
    left: 34%
   }
   .îles-du-Frioul-img {
@@ -680,5 +680,56 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
    position: absolute;
    top: 169.5%;
    left: 33%
-  
+   }
+   .title-îles {
+    position: absolute;
+    top: 183.5%;
+    left: 34%
+   }
+
+   
+   .calanques-img {
+    
+    border-bottom: white solid 62px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
+    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+    height: 50%;
+    object-fit: cover;
+    width: 15.5%;
+    margin-left: 39%;
+    position: absolute;
+    top: 133.7%;
+   }
+
+   .title-calanques {
+    position: absolute;
+    top: 183.5%;
+    left: 54.5%
   }
+  
+  .longchamp {
+    
+    position: absolute;
+    top: 173.5%;
+    left: 74.5%
+  }
+  .longchamp-img {
+    border-bottom: white solid 62px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
+    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+    height: 50%;
+    object-fit: cover;
+    width: 15.5%;
+    margin-left: 39%;
+    position: absolute;
+    top: 133.7%;
+   }
+  
+   
+   
