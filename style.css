@@ -618,8 +618,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     margin-top: 1.5rem; /*Margin avec */
     align-self: center;
     flex-direction: column;
-    justify-content: flex-start;
-    justify-content: center;
+    
     justify-content: space-between;
   }
    
@@ -709,27 +708,55 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     top: 183.5%;
     left: 54.5%
   }
-  
-  .longchamp {
+  .notre-dame-img {
     
-    position: absolute;
-    top: 173.5%;
-    left: 74.5%
-  }
+    border-bottom: white solid 62px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
+    cursor: pointer;
+    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+    height: 11rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 20%;        /*largeur*/
+    max-height: 100%;
+   position: absolute;
+   top: 134.5%;
+   left: 71.4%
+   }
+  
+ .title-notre-dame {
+  position: absolute;
+   top: 155%;
+   left: 72.5%
+ }
+  
+ 
   .longchamp-img {
+    
     border-bottom: white solid 62px;
     background-color: white;
     border-radius: 30px;
     cursor: pointer;
     box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
     object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-    height: 50%;
+    height: 10.5rem;
     object-fit: cover;
-    width: 15.5%;
-    margin-left: 39%;
-    position: absolute;
-    top: 133.7%;
+    max-width: 100%;
+    width: 20%;        /*largeur*/
+    max-height: 100%;
+   position: absolute;
+   top: 165.5%;
+   left: 71.4%
    }
-  
-   
+    
+ .title-longchamp {
+  position: absolute;
+  top: 185%;
+  left: 72.5%
+ }
+
+ 
+ 
    
