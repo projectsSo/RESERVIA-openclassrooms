@@ -757,6 +757,33 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
   left: 72.5%
  }
 
+ /*fOOTER*/
+ footer {
+   flex-shrink: 0;
+   
+   width: 100%;
+   background-color: #F2F2F2;
+ }
+ .contenu-footer {
+   width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   font-size: 20px;
+  padding: 50px 0 100px;
+ }
+ .bloc {
+   width: 25%;
+   margin: 0 300px;
+}
+
+.bloc-footer-site, .bloc-footer-charte, .bloc-footer-aide {
+  list-style: none;
+}
+.bloc-footer-site {
+  margin-left: 10px;
+}
  
  
    
