@@ -2,7 +2,7 @@
 
 html {
   
-  -webkit-text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
+  text-size-adjust: 100%; /* Determine ajustement taille police par rapport à sa taille initiale*/
   font-size: 100%; /*Tous mes éléments utilisant l’unité de mesure REM, auront une taille relative à cette taille (100% dans le cas présent)*/
 }
 
@@ -264,7 +264,7 @@ margin-top: inherit;
   justify-content: center;
   border-bottom: #f2f2f2 0.3rem solid;
   border-top: #f2f2f2 0.3rem solid;
-  border-left: #f2f2f2 0.3rem solid
+  border-left: #f2f2f2 0.3rem solid;
   height: 2rem;
   width: 2rem;
   min-height: 2rem;  /*De min-height à min-width fait un cercle*/
@@ -325,7 +325,6 @@ height: 670px;
   border-left: white solid 7px;
   border-right: white solid 7px;
   border-bottom: white solid 87px;
-  background-color: white;
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa;  /*ombres/
@@ -495,7 +494,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
       top: 118%;
       left: 16%;
          
-          margin: 25px 60 60 35px;
+          margin: 2px 5px 10px;
           font-weight: bold;
           font-size: 1.2em; 
 
@@ -612,7 +611,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     }
 
     /*Troisiéme et derniére section*/
-   .activités {
+   .activites {
     display: flex;   
     flex-wrap: wrap;
     margin-top: 1.5rem; /*Margin avec */
@@ -634,9 +633,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
     height: 200%;
     width: 22.4%;
     object-fit: cover;
-  
-   
-   }
+  }
 
   .title-port {
     position: absolute;
@@ -664,7 +661,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
    top: 159%;
    left: 34%
   }
-  .îles-du-Frioul-img {
+  .iles-du-Frioul-img {
     border-bottom: white solid 62px;
     background-color: white;
     border-radius: 30px;
@@ -680,7 +677,7 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
    top: 169.5%;
    left: 33%
    }
-   .title-îles {
+   .title-iles {
     position: absolute;
     top: 183.5%;
     left: 34%
@@ -760,29 +757,53 @@ line-height: 1.4;             /*hauteur de l'interligne par rapport à la police
  /*fOOTER*/
  footer {
    flex-shrink: 0;
+   width: 105%;
    
-   width: 100%;
    background-color: #F2F2F2;
+  
+   
  }
  .contenu-footer {
-   width: 1200px;
-   margin: 0 auto;
+   width: 100%;
+  
+   padding-top: 3rem;
+  padding-bottom: 2rem;
    display: flex;
    justify-content: center;
-   align-items: flex-start;
-   font-size: 20px;
-  padding: 50px 0 100px;
+   
+   font-size: 18px;
+ 
+  justify-content: space-between;
+  line-height: 1;
+ 
  }
- .bloc {
-   width: 25%;
-   margin: 0 300px;
-}
+ 
 
 .bloc-footer-site, .bloc-footer-charte, .bloc-footer-aide {
   list-style: none;
+  margin-top: -2%;
+  
+}
+.ancrebis {
+  color: black;
+    text-decoration: none;
+    line-height: 1.9;
+    
+}
+.ancrebis:hover {
+  text-decoration: underline;
 }
 .bloc-footer-site {
-  margin-left: 10px;
+  margin-left: 13.5%;
+}
+.bloc-footer-charte {
+  margin-right: 35%;
+  }
+
+.bloc-footer-aide{
+  position: relative;
+  right: 37.5rem;
+  
 }
  
  
