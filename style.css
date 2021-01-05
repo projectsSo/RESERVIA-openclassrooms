@@ -20,8 +20,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 5px;
-  padding-right: 35px;
+  padding-left: 0.4%;
   margin: auto;
 }
 .logoreservia {
@@ -70,7 +69,7 @@ header nav ul li a {
   flex-direction: column;
   justify-content: flex-start;
   justify-content: center;
-  margin-left: 0px;
+  
   height: 70px; /* Hauteur pour que les éléments aient la place de bouger */
 }
 h1 {
@@ -137,12 +136,11 @@ p {
   display: flex;
   align-items: center;
   max-width: 100%;
-  margin-top: 1.5rem; /*espace avec Marseille*/
-  margin-left: 0.01rem;
-}
-.filtres {
-  margin-top: inherit;
-}
+  margin-top: 1.8%; /*espace avec Marseille*/
+  }
+  .filtres {
+    margin-top: inherit;
+  }
 .money,
 .child,
 .famililal,
@@ -253,7 +251,7 @@ p {
 .location {
   display: flex; /*300 a 301 a verifier*/
   flex-wrap: wrap;
-  margin-top: 1.5rem; /*Margin avec info*/
+  margin-top: 1.5%; /*Margin avec info*/
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -343,9 +341,9 @@ p {
 /*Deuxiéme section: trois derniéres images horizontales*/
 
 .location-bis {
-  display: flex; /*300 a 301 a verifier*/
+  display: flex; 
   flex-wrap: wrap;
-  margin-top: 1.5rem; /*Margin avec search-filters*/
+  margin-top: 1.9%;
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -529,11 +527,11 @@ p {
 .activites {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1.5rem; 
+  margin-top: 1.5rem;
   align-self: center;
   flex-direction: column;
   justify-content: space-between;
-}
+  }
 .activites-marseille {
   margin-top: -15.2rem;
 }
@@ -654,7 +652,7 @@ p {
 /*fOOTER*/
 
 footer {
-  flex-shrink: 0;
+  flex-shrink: 0;               /*definit le facteur de rétrecissement d'un element*/
   width: 105%;
   background-color: #f2f2f2;
 }
@@ -675,13 +673,23 @@ footer {
 }
 .site,
 .charte,
-.aide {
+.contact {
   list-style-type: none;
+}
+.site {
+  margin-left: -2.5rem;
+}
+.charte{
+  position: relative;
+  left: -18.2%;
+}
+.contact {
+ position: relative;
+ left: -24%;
 }
 .ancrebis {
   color: black;
   text-decoration: none;
-
   line-height: 1.9;
 }
 .ancrebis:hover {
@@ -697,3 +705,4 @@ footer {
   position: relative;
   right: 37.5rem;
 }
+
