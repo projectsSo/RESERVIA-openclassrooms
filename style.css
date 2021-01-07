@@ -31,8 +31,7 @@ header nav {
   align-items: center;
   justify-content: flex-end;
   margin-right: 120px;
-  position: sticky; /*Pour faire apparaitre le menu en permanence*/
-}
+  }
 .border-topi {
   border-top: 3px solid;
   color: #0065fc;
@@ -69,14 +68,12 @@ header nav ul li a {
   flex-direction: column;
   justify-content: flex-start;
   justify-content: center;
-  
   height: 70px; /* Hauteur pour que les éléments aient la place de bouger */
 }
 h1 {
   margin-left: 0%;
   position: absolute;
   top: 15%;
-  display: flex;
 }
 p {
   margin: 0;
@@ -134,12 +131,12 @@ p {
 
 .searchfilters {
   display: flex;
-  align-items: center;
+  align-items: center; /*Aligne tout*/
   max-width: 100%;
   margin-top: 1.8%; /*espace avec Marseille*/
   }
   .filtres {
-    margin-top: inherit;
+    margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
   }
 .money,
 .child,
@@ -178,6 +175,7 @@ p {
   border-radius: 30px;
   border-bottom: #f2f2f2 0.2rem solid;
   border-top: #f2f2f2 0.2rem solid;
+  border-right: #f2f2f2 0.2rem solid;
   padding-left: 2.5rem; /*marge à l'interieur des border-radius*/
   height: 45px;
   justify-content: center; /*centre le mot economique dans le border radius*/
@@ -249,8 +247,8 @@ p {
 /* Trois premiéres images horizontales*/
 
 .location {
-  display: flex; /*300 a 301 a verifier*/
-  flex-wrap: wrap;
+  display: flex; 
+  flex-wrap: wrap;  /*indique que les éléments flexibles sont contraints à être disposés sur plusieurs lignes*/
   margin-top: 1.5%; /*Margin avec info*/
   align-self: center;
   flex-direction: column;
@@ -338,7 +336,7 @@ p {
   color: #d7dbdf;
 }
 
-/*Deuxiéme section: trois derniéres images horizontales*/
+/*Toujours deuxiéme section: trois derniéres images horizontales*/
 
 .location-bis {
   display: flex; 
@@ -383,7 +381,7 @@ p {
   left: 295px;
   width: 256px; /*De with à object-fit pour dimension image que height=image deformée*/
   height: 127px;
-  object-fit: cover;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
 }
 .panier-img {
   position: absolute;
@@ -708,14 +706,38 @@ footer {
 
 /*MEDIA QUERIES*/
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
-@media screen and (max-width: 1280px)
+@media all and (max-width: 1024px) 
+{
+    .logoreservia
+    {
+        width: auto;
+        margin-left: 2%;
+    }
 
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 1024px) and (max-width: 1280px)
+    nav
+    {
+      width: auto;
+      text-align: left;
+    }
 
+    nav ul 
+    {
+      flex-direction: column;
+    }
 
+    nav li 
+    {
+      padding-left: 4px;
+    }
+    nav a 
+    {
+      font-size: 1.1em;
+    }
 
-/* Sur tous types d'écrans orientés verticalement */
-@media all and (orientation: portrait)
+    .searchfilters 
+    {
+      flex-direction: column;
 
+    }
+
+ }
