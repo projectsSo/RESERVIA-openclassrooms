@@ -1,3 +1,4 @@
+  
 /* Feuille de style pour le projet 2 reservia */
 
 html {
@@ -14,23 +15,24 @@ body {
 /* HEADER */
 
 .header {
-  top: 0;
+  margin: 0;
   left: 0;
   z-index: 10;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   padding-left: 0.4%;
   margin: auto;
 }
 .logoreservia {
-  margin: 2.5em 16.5em;
+  margin-top: 2.2%;
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 120px;
+  margin-right: 5%;
+  margin-top: 2.2%
   }
 .border-topi {
   border-top: 3px solid;
@@ -59,25 +61,18 @@ header nav ul li a {
 /*Premiere section*/
 
 .main {
-  margin: 40px 270px;
-  display: block;
+  margin: auto;
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
+  width: 90%;
 }
 .searchheader {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   justify-content: center;
-  height: 70px; /* Hauteur pour que les éléments aient la place de bouger */
-}
-h1 {
-  margin-left: 0%;
-  position: absolute;
-  top: 15%;
-}
-p {
-  margin: 0;
-  height: 0;
+  }
+#line {
+  margin-top: 0%;
+  line-height: 0.5;
 }
 .searchForm {
   display: inline-flex;
@@ -213,11 +208,7 @@ p {
 /*info*/
 
 .info-clients {
-  margin-top: 1.5rem; /*Margin avec search-filters*/
-  align-self: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
+ 
 }
 .fas.fa-info {
   color: #0065fc;
@@ -229,14 +220,10 @@ p {
   border-bottom: #f2f2f2 0.3rem solid;
   border-top: #f2f2f2 0.3rem solid;
   border-left: #f2f2f2 0.3rem solid;
-  height: 2rem;
-  width: 2rem;
-  min-height: 2rem; /*De min-height à min-width fait un cercle*/
-  min-width: 2rem;
+  min-width: 2rem; /*Cercle*/
   border: solid 1px #d9d9d9; /*Contour du cercle*/
-  border-radius: 100%; /*Pour faire le cercle*/
-  margin: 0;
-  height: 2rem;
+  border-radius: 100%; /*Transforme carré en cercle*/
+  height: 2rem; /*Hauteur du cercle*/
 }
 .nombre {
   display: inline-flex;
@@ -261,7 +248,6 @@ p {
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  width: 68%;
   height: 670px;
 }
 .marseille-hosting {
@@ -290,16 +276,18 @@ p {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 128px;
+  height: 10%;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 253px;
+  width: 12%;
 }
 .port-img {
   margin-left: 11%;
 }
 .cannebiere-img {
-  position: absolute;
-  top: 34rem;
+  height: 80%;
+  width: 90%;
+  position: relative;
+  bottom: 55%;
 }
 .port-img {
   position: absolute;
@@ -740,4 +728,4 @@ footer {
 
     }
 
- }
+ 
