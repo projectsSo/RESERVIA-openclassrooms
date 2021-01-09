@@ -31,7 +31,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 5%;
+  margin-right: 17%;
   margin-top: 2.2%
   }
 .border-topi {
@@ -248,6 +248,7 @@ header nav ul li a {
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
+  
   height: 670px;
 }
 .marseille-hosting {
@@ -261,7 +262,7 @@ header nav ul li a {
 .hotel-des-mouettes {
   width: 245px;
   height: 130px;
-  margin: 30px 15px 80px 30px; /*a verifier 318 a 321*/
+  margin: 30px 15px 80px 30px; 
   cursor: pointer;
 }
 .cannebiere-img,
@@ -276,44 +277,40 @@ header nav ul li a {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 10%;
+  height: 80%;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 12%;
+  width: 100%;
 }
 .port-img {
-  margin-left: 11%;
+  position: relative;
+  top: -280%;
+  left: 117%;
 }
 .cannebiere-img {
-  height: 80%;
-  width: 90%;
   position: relative;
   bottom: 55%;
-}
-.port-img {
-  position: absolute;
-  top: 34rem;
-  left: 24.1rem;
-}
+  }
 .mouettes-img {
   position: relative;
-  top: 3.2rem;
+  top: 50%;
   left: 110px;
 }
 .tarif-cannebiere {
   position: relative;
-  top: 47%;
-  left: 9%;
+  top: -115%;
+  left: 7%;
+  
   line-height: 1.4; /*hauteur de l'interligne par rapport à la police*/
 }
 .tarif-hotel-du-port {
-  position: absolute;
-  top: 43rem;
-  left: 33%;
+  position: relative;
+  bottom: 340%;
+  left: 125%;
   line-height: 1.4;
 }
 .tarif-hotel-les-mouettes {
   position: relative;
-  top: -1.8rem;
+  top: -10%;
   left: 54%;
   line-height: 1.4;
 }
@@ -329,7 +326,8 @@ header nav ul li a {
 .location-bis {
   display: flex; 
   flex-wrap: wrap;
-  margin-top: 1.9%;
+  position: relative;
+  bottom: 135%;
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -365,10 +363,10 @@ header nav ul li a {
 }
 .mer-img {
   position: absolute;
-  top: 805px;
-  left: 295px;
-  width: 256px; /*De with à object-fit pour dimension image que height=image deformée*/
-  height: 127px;
+  top: 330%;
+  right: 186%;
+  width: 83%; /*De with à object-fit pour dimension image que height=image deformée*/
+  height: 50%;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
 }
 .panier-img {
@@ -419,7 +417,7 @@ header nav ul li a {
   display: block;
   position: absolute;
   top: 51%;
-  left: 65%;
+  left: 78%;
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -431,8 +429,10 @@ header nav ul li a {
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  width: 26%;
+  width: 30%;
   height: 670px;
+  margin-left: -10%;
+  margin-top: -2.5%;
 }
 .most-popular {
   display: flex;
