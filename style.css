@@ -15,24 +15,24 @@ body {
 /* HEADER */
 
 .header {
-  margin: 0;
+  top: 0;
   left: 0;
   z-index: 10;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-left: 0.4%;
   margin: auto;
 }
 .logoreservia {
-  margin-top: 2.2%;
+  margin: 2.2%;
+  margin-left: 4.5%;
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 17%;
-  margin-top: 2.2%
+  margin-right: 120px;
   }
 .border-topi {
   border-top: 3px solid;
@@ -62,17 +62,25 @@ header nav ul li a {
 
 .main {
   margin: auto;
+  display: block;
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
   width: 90%;
 }
 .searchheader {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   justify-content: center;
-  }
-#line {
-  margin-top: 0%;
-  line-height: 0.5;
+  height: 35px; /* Hauteur pour que les éléments aient la place de bouger */
+}
+h1 {
+  margin-left: 0%;
+  position: absolute;
+  top: 9%;
+}
+p {
+  margin: 0;
+  
 }
 .searchForm {
   display: inline-flex;
@@ -208,7 +216,11 @@ header nav ul li a {
 /*info*/
 
 .info-clients {
- 
+  margin-top: 1.5rem; /*Margin avec search-filters*/
+  align-self: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
 }
 .fas.fa-info {
   color: #0065fc;
@@ -220,10 +232,14 @@ header nav ul li a {
   border-bottom: #f2f2f2 0.3rem solid;
   border-top: #f2f2f2 0.3rem solid;
   border-left: #f2f2f2 0.3rem solid;
-  min-width: 2rem; /*Cercle*/
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem; /*De min-height à min-width fait un cercle*/
+  min-width: 2rem;
   border: solid 1px #d9d9d9; /*Contour du cercle*/
-  border-radius: 100%; /*Transforme carré en cercle*/
-  height: 2rem; /*Hauteur du cercle*/
+  border-radius: 100%; /*Pour faire le cercle*/
+  margin: 0;
+  height: 2rem;
 }
 .nombre {
   display: inline-flex;
@@ -235,7 +251,7 @@ header nav ul li a {
 
 .location {
   display: flex; 
-  flex-wrap: wrap;  /*indique que les éléments flexibles sont contraints à être disposés sur plusieurs lignes*/
+  flex-wrap: nowrap; /*indique que les éléments flexibles sont contraints à être disposés sur plusieurs lignes*/
   margin-top: 1.5%; /*Margin avec info*/
   align-self: center;
   flex-direction: column;
@@ -248,8 +264,7 @@ header nav ul li a {
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  
-  height: 670px;
+  height: 600px;
 }
 .marseille-hosting {
   display: flex;
@@ -277,40 +292,46 @@ header nav ul li a {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 80%;
+  height: 128px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 100%;
-}
-.port-img {
-  position: relative;
-  top: -280%;
-  left: 117%;
+  width: 255px;
 }
 .cannebiere-img {
-  position: relative;
-  bottom: 55%;
-  }
+  position: absolute;
+  left: 6.3%;
+  top: 64%;
+}
+.port-img {
+  position: absolute;
+  top: 64%;
+  left: 25.5%;
+  
+}
 .mouettes-img {
-  position: relative;
-  top: 50%;
-  left: 110px;
+  height: 17%;
+  object-fit: cover;
+  max-width: 100%;
+  width: 16.5%;
+  max-height: 100%;
+  position: absolute;
+  top: 64%;
+  left: 45.4%;
 }
 .tarif-cannebiere {
   position: relative;
-  top: -115%;
-  left: 7%;
-  
+  top: 47%;
+  left: 9%;
   line-height: 1.4; /*hauteur de l'interligne par rapport à la police*/
 }
 .tarif-hotel-du-port {
-  position: relative;
-  bottom: 340%;
-  left: 125%;
+  position: absolute;
+  top: 43rem;
+  left: 33%;
   line-height: 1.4;
 }
 .tarif-hotel-les-mouettes {
   position: relative;
-  top: -10%;
+  top: -1.8rem;
   left: 54%;
   line-height: 1.4;
 }
@@ -325,9 +346,8 @@ header nav ul li a {
 
 .location-bis {
   display: flex; 
-  flex-wrap: wrap;
-  position: relative;
-  bottom: 135%;
+  flex-wrap: nowrap;
+ 
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -339,7 +359,7 @@ header nav ul li a {
 .hotel-chez-Amina {
   width: 245px;
   height: 130px;
-  margin: 30px 15px 80px 30px; /*a verifier 318 a 321*/
+  margin: 30px 15px 80px 30px;
   cursor: pointer;
 }
 .ancre {
@@ -357,33 +377,40 @@ header nav ul li a {
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-      height: 128px;
+      height: 10px;
       object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  width: 255px;
+      width: 255px;
 }
 .mer-img {
-  position: absolute;
-  top: 330%;
-  right: 186%;
-  width: 83%; /*De with à object-fit pour dimension image que height=image deformée*/
-  height: 50%;
-  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-}
-.panier-img {
-  position: absolute;
-  top: 805px;
-  left: 31.5%;
-  height: 127px;
-}
-.amina-img {
-  height: 8rem;
+  height: 17%;
   object-fit: cover;
   max-width: 100%;
-  width: 13.5%; /*largeur*/
+  width: 16.5%;
   max-height: 100%;
   position: absolute;
-  top: 805px;
-  left: 890px;
+  top: 95%;
+  left: 6.4%;
+ 
+  }
+.panier-img {
+  height: 17%;
+  object-fit: cover;
+  max-width: 100%;
+  width: 17.5%;
+  max-height: 100%;
+  position: absolute;
+  top: 95%;
+  left: 25%;
+}
+.amina-img {
+  height: 17%;
+  object-fit: cover;
+  max-width: 100%;
+  width: 17.5%;
+  max-height: 100%;
+  position: absolute;
+  top: 95%;
+  left: 45%;
 }
 .tarif-hotel-de-la-mer {
   position: absolute;
@@ -417,7 +444,7 @@ header nav ul li a {
   display: block;
   position: absolute;
   top: 51%;
-  left: 78%;
+  left: 65%;
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -429,10 +456,8 @@ header nav ul li a {
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  width: 30%;
+  width: 33%;
   height: 670px;
-  margin-left: -10%;
-  margin-top: -2.5%;
 }
 .most-popular {
   display: flex;
@@ -728,4 +753,4 @@ footer {
 
     }
 
- 
+ }
