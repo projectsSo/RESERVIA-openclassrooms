@@ -1,4 +1,3 @@
-  
 /* Feuille de style pour le projet 2 reservia */
 
 html {
@@ -33,7 +32,7 @@ header nav {
   align-items: center;
   justify-content: flex-end;
   margin-right: 120px;
-  }
+}
 .border-topi {
   border-top: 3px solid;
   color: #0065fc;
@@ -80,7 +79,6 @@ h1 {
 }
 p {
   margin: 0;
-  
 }
 .searchForm {
   display: inline-flex;
@@ -137,10 +135,10 @@ p {
   align-items: center; /*Aligne tout*/
   max-width: 100%;
   margin-top: 1.8%; /*espace avec Marseille*/
-  }
-  .filtres {
-    margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
-  }
+}
+.filtres {
+  margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
+}
 .money,
 .child,
 .famililal,
@@ -249,22 +247,12 @@ p {
 /*Deuxiéme section*/
 /* Trois premiéres images horizontales*/
 
-.location {
-  display: flex; 
-  flex-wrap: nowrap; /*indique que les éléments flexibles sont contraints à être disposés sur plusieurs lignes*/
-  margin-top: 1.5%; /*Margin avec info*/
-  align-self: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
-  justify-content: space-between;
-}
 #location {
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  height: 600px;
+  height: 595px;
 }
 .marseille-hosting {
   display: flex;
@@ -272,17 +260,22 @@ p {
   height: 3rem;
   margin-left: 34px;
 }
-.auberge-cannebiere,
-.hotel-du-port,
-.hotel-des-mouettes {
-  width: 245px;
-  height: 130px;
-  margin: 30px 15px 80px 30px; 
-  cursor: pointer;
+.grid-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.1px;  /*Marge entre 2 images*/
+  margin-left: 5%;
 }
 .cannebiere-img,
 .port-img,
 .mouettes-img {
+  display: grid;
+  height: 25%;
+  object-fit: cover;
+  max-width: 100%;
+  width: 75%;
+  max-height: 100%;
+  cursor: pointer;
   border: white solid 70px; /* Encadrement blanc image*/
   border-top: white solid 7px;
   border-left: white solid 7px;
@@ -290,50 +283,22 @@ p {
   border-bottom: white solid 87px;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 128px;
-  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 255px;
-}
-.cannebiere-img {
-  position: absolute;
-  left: 6.3%;
-  top: 64%;
-}
-.port-img {
-  position: absolute;
-  top: 64%;
-  left: 25.5%;
-  
-}
-.mouettes-img {
-  height: 17%;
-  object-fit: cover;
-  max-width: 100%;
-  width: 16.5%;
-  max-height: 100%;
-  position: absolute;
-  top: 64%;
-  left: 45.4%;
-}
+  box-shadow: 2px 2px 5px #aaaaaa;        /*ombres*/
+  }
 .tarif-cannebiere {
-  position: relative;
-  top: 47%;
-  left: 9%;
-  line-height: 1.4; /*hauteur de l'interligne par rapport à la police*/
+  line-height: 1.4;
+    margin-top: -30%;
+    margin-left: 4%;
 }
 .tarif-hotel-du-port {
-  position: absolute;
-  top: 43rem;
-  left: 33%;
   line-height: 1.4;
+    margin-top: -30%;
+    margin-left: 4%;
 }
 .tarif-hotel-les-mouettes {
-  position: relative;
-  top: -1.8rem;
-  left: 54%;
   line-height: 1.4;
+  margin-top: -30%;
+  margin-left: 4%;
 }
 .fas.fas.fa-star {
   color: #0065fc;
@@ -344,23 +309,12 @@ p {
 
 /*Toujours deuxiéme section: trois derniéres images horizontales*/
 
-.location-bis {
-  display: flex; 
-  flex-wrap: nowrap;
- 
-  align-self: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
-  justify-content: space-between;
-}
-.hotel-de-la-mer,
-.Auberge-le-panier,
-.hotel-chez-Amina {
-  width: 245px;
-  height: 130px;
-  margin: 30px 15px 80px 30px;
-  cursor: pointer;
+.grid-location-bis {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.1px;  /*Marge entre 2 images*/
+  margin-left: 5%;
+  margin-top: -30%;
 }
 .ancre {
   color: black;
@@ -369,6 +323,13 @@ p {
 .mer-img,
 .panier-img,
 .amina-img {
+  display: grid;
+  height: 25%;
+  object-fit: cover;
+  max-width: 100%;
+  width: 75%;
+  max-height: 100%;
+  cursor: pointer;
   border: white solid 70px; /* Encadrement blanc image*/
   border-top: white solid 7px;
   border-left: white solid 7px;
@@ -376,58 +337,22 @@ p {
   border-bottom: white solid 87px;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-      height: 10px;
-      object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-      width: 255px;
-}
-.mer-img {
-  height: 17%;
-  object-fit: cover;
-  max-width: 100%;
-  width: 16.5%;
-  max-height: 100%;
-  position: absolute;
-  top: 95%;
-  left: 6.4%;
- 
+  box-shadow: 2px 2px 5px #aaaaaa;                            /*ombres*/
+  cursor: pointer;
   }
-.panier-img {
-  height: 17%;
-  object-fit: cover;
-  max-width: 100%;
-  width: 17.5%;
-  max-height: 100%;
-  position: absolute;
-  top: 95%;
-  left: 25%;
-}
-.amina-img {
-  height: 17%;
-  object-fit: cover;
-  max-width: 100%;
-  width: 17.5%;
-  max-height: 100%;
-  position: absolute;
-  top: 95%;
-  left: 45%;
-}
 .tarif-hotel-de-la-mer {
-  position: absolute;
-  top: 104%;
-  left: 17%;
-  line-height: 1.4; /*hauteur de l'interligne par rapport à la police*/
-}
-.tarif-auberge-le-panier {
-  position: absolute;
-  top: 104%;
-  left: 32.9%;
+  margin-top: -30%;
+  margin-left: 4%;
   line-height: 1.4;
+ }
+.tarif-auberge-le-panier {
+  margin-top: -30%;
+    margin-left: 4%;
+    line-height: 1.4;
 }
 .tarif-hotel-Amina {
-  position: absolute;
-  top: 104%;
-  left: 49%;
+  margin-top: -30%;
+  margin-left: 5%;
   line-height: 1.4;
 }
 .more {
@@ -457,8 +382,10 @@ p {
   border-bottom: 2px;
   border-radius: 16px;
   width: 33%;
-  height: 670px;
+  height: 598px;
+  margin-top: -4.5%;
 }
+
 .most-popular {
   display: flex;
   position: absolute;
@@ -542,9 +469,9 @@ p {
   align-self: center;
   flex-direction: column;
   justify-content: space-between;
-  }
+}
 .activites-marseille {
-  margin-top: -15.2rem;
+  margin-top: -10.2rem;
 }
 .vieux-port-img {
   border-bottom: white solid 62px;
@@ -663,7 +590,7 @@ p {
 /*fOOTER*/
 
 footer {
-  flex-shrink: 0;               /*definit le facteur de rétrecissement d'un element*/
+  flex-shrink: 0; /*definit le facteur de rétrecissement d'un element*/
   width: 105%;
   background-color: #f2f2f2;
 }
@@ -690,13 +617,13 @@ footer {
 .site {
   margin-left: -2.5rem;
 }
-.charte{
+.charte {
   position: relative;
   left: -18.2%;
 }
 .contact {
- position: relative;
- left: -24%;
+  position: relative;
+  left: -24%;
 }
 .ancrebis {
   color: black;
@@ -719,38 +646,29 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media all and (max-width: 1024px) 
-{
-    .logoreservia
-    {
-        width: auto;
-        margin-left: 2%;
-    }
+@media all and (max-width: 1024px) {
+  .logoreservia {
+    width: auto;
+    margin-left: 2%;
+  }
 
-    nav
-    {
-      width: auto;
-      text-align: left;
-    }
+  nav {
+    width: auto;
+    text-align: left;
+  }
 
-    nav ul 
-    {
-      flex-direction: column;
-    }
+  nav ul {
+    flex-direction: column;
+  }
 
-    nav li 
-    {
-      padding-left: 4px;
-    }
-    nav a 
-    {
-      font-size: 1.1em;
-    }
+  nav li {
+    padding-left: 4px;
+  }
+  nav a {
+    font-size: 1.1em;
+  }
 
-    .searchfilters 
-    {
-      flex-direction: column;
-
-    }
-
- }
+  .searchfilters {
+    flex-direction: column;
+  }
+}
