@@ -61,7 +61,7 @@ header nav ul li a {
 
 .main {
   margin: auto;
-  display: block;
+  display: block;    /*a voir*/
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
   width: 90%;
 }
@@ -72,14 +72,14 @@ header nav ul li a {
   justify-content: center;
   height: 35px; /* Hauteur pour que les éléments aient la place de bouger */
 }
-h1 {
+ h1 {
   margin-left: 0%;
-  position: absolute;
-  top: 9%;
+  margin-top: -3%;
 }
 p {
   margin: 0;
-}
+  height: 0;
+  }
 .searchForm {
   display: inline-flex;
   max-width: 100%;
@@ -247,12 +247,13 @@ p {
 /*Deuxiéme section*/
 /* Trois premiéres images horizontales*/
 
+
 #location {
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  height: 595px;
+  height: 580px;
 }
 .marseille-hosting {
   display: flex;
@@ -260,22 +261,26 @@ p {
   height: 3rem;
   margin-left: 34px;
 }
-.grid-location {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 0.1px;  /*Marge entre 2 images*/
-  margin-left: 5%;
+.row-location {
+  display: flex; 
+  flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
+  justify-content: flex-start; /*a gauche*/
+  align-items: center; 
+  margin: auto;   /*verifier*/
+  align-items: flex-start; /*positionne en haut du container*/
+  }
+.auberge-cannebiere,
+.hotel-du-port,
+.hotel-des-mouettes {
+  width: 245px;
+  height: 130px;
+  margin: 20px 0px 20px 10px;
+  padding: 0px; /*a voir*/
+  cursor: pointer;
 }
 .cannebiere-img,
 .port-img,
 .mouettes-img {
-  display: grid;
-  height: 25%;
-  object-fit: cover;
-  max-width: 100%;
-  width: 75%;
-  max-height: 100%;
-  cursor: pointer;
   border: white solid 70px; /* Encadrement blanc image*/
   border-top: white solid 7px;
   border-left: white solid 7px;
@@ -283,22 +288,18 @@ p {
   border-bottom: white solid 87px;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa;        /*ombres*/
-  }
-.tarif-cannebiere {
-  line-height: 1.4;
-    margin-top: -30%;
-    margin-left: 4%;
-}
-.tarif-hotel-du-port {
-  line-height: 1.4;
-    margin-top: -30%;
-    margin-left: 4%;
-}
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 100px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 200px;
+ }
+.tarif-cannebiere,
+.tarif-hotel-du-port,
 .tarif-hotel-les-mouettes {
-  line-height: 1.4;
-  margin-top: -30%;
-  margin-left: 4%;
+line-height: 1.4;
+margin-top: -40%;
+margin-left: 4%;
 }
 .fas.fas.fa-star {
   color: #0065fc;
@@ -309,12 +310,22 @@ p {
 
 /*Toujours deuxiéme section: trois derniéres images horizontales*/
 
-.grid-location-bis {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 0.1px;  /*Marge entre 2 images*/
-  margin-left: 5%;
-  margin-top: -30%;
+.row-location-bis {
+  display: flex; 
+  flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
+  justify-content: flex-start; /*a gauche*/
+  align-items: center; 
+  margin: auto;   /*verifier*/
+  margin-top: -35%;
+}
+.hotel-de-la-mer,
+.auberge-le-panier,
+.hotel-chez-amina {
+  width: 245px;
+  height: 130px;
+  margin: 90px 0px 20px 10px;
+  padding: 0px; /*a voir*/
+  cursor: pointer;
 }
 .ancre {
   color: black;
@@ -323,13 +334,6 @@ p {
 .mer-img,
 .panier-img,
 .amina-img {
-  display: grid;
-  height: 25%;
-  object-fit: cover;
-  max-width: 100%;
-  width: 75%;
-  max-height: 100%;
-  cursor: pointer;
   border: white solid 70px; /* Encadrement blanc image*/
   border-top: white solid 7px;
   border-left: white solid 7px;
@@ -337,31 +341,24 @@ p {
   border-bottom: white solid 87px;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa;                            /*ombres*/
-  cursor: pointer;
-  }
-.tarif-hotel-de-la-mer {
-  margin-top: -30%;
-  margin-left: 4%;
-  line-height: 1.4;
- }
-.tarif-auberge-le-panier {
-  margin-top: -30%;
-    margin-left: 4%;
-    line-height: 1.4;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 100px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 200px;
 }
-.tarif-hotel-Amina {
-  margin-top: -30%;
-  margin-left: 5%;
-  line-height: 1.4;
+.tarif-hotel-de-la-mer,
+.tarif-auberge-le-panier,
+.tarif-hotel-amina {
+line-height: 1.4;
+margin-top: -40%;
+margin-left: 4%;
+
 }
 .more {
-  position: absolute;
-  top: 118%;
-  left: 16%;
-  margin: 2px 5px 10px;
-  font-weight: bold;
-  font-size: 1.2em;
+font-size: 1.2em;
+margin-top: 15%;
+margin-left: 5.5%;
 }
 
 /*ASIDE*/
@@ -382,10 +379,9 @@ p {
   border-bottom: 2px;
   border-radius: 16px;
   width: 33%;
-  height: 598px;
-  margin-top: -4.5%;
+  height: 580px;
+  margin-top: -3.2%;
 }
-
 .most-popular {
   display: flex;
   position: absolute;
@@ -471,7 +467,7 @@ p {
   justify-content: space-between;
 }
 .activites-marseille {
-  margin-top: -10.2rem;
+  margin-top: 10rem;
 }
 .vieux-port-img {
   border-bottom: white solid 62px;
@@ -670,5 +666,12 @@ footer {
 
   .searchfilters {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px){
+  .row-location{
+    flex-direction: column;
+    height: auto;
   }
 }
