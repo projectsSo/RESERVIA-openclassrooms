@@ -61,7 +61,7 @@ header nav ul li a {
 
 .main {
   margin: auto;
-  display: block;    /*a voir*/
+  display: block;    /*a verifier*/ /*valeur par défaut, elements les un en dessous de autres, oblige à revenir à la ligne*/
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
   width: 90%;
 }
@@ -253,7 +253,7 @@ p {
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  height: 580px;
+  height: 670px;
 }
 .marseille-hosting {
   display: flex;
@@ -264,10 +264,9 @@ p {
 .row-location {
   display: flex; 
   flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
-  justify-content: flex-start; /*a gauche*/
-  align-items: center; 
   margin: auto;   /*verifier*/
   align-items: flex-start; /*positionne en haut du container*/
+  justify-content: space-evenly;  /*Espacement identique*/
   }
 .auberge-cannebiere,
 .hotel-du-port,
@@ -294,11 +293,12 @@ p {
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 200px;
  }
+ 
 .tarif-cannebiere,
 .tarif-hotel-du-port,
 .tarif-hotel-les-mouettes {
 line-height: 1.4;
-margin-top: -40%;
+margin-top: -37%;
 margin-left: 4%;
 }
 .fas.fas.fa-star {
@@ -313,10 +313,9 @@ margin-left: 4%;
 .row-location-bis {
   display: flex; 
   flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
-  justify-content: flex-start; /*a gauche*/
   align-items: center; 
-  margin: auto;   /*verifier*/
-  margin-top: -35%;
+  margin-top: -40%;
+  justify-content: space-evenly;      /*Espacement identique*/
 }
 .hotel-de-la-mer,
 .auberge-le-panier,
@@ -351,14 +350,13 @@ margin-left: 4%;
 .tarif-auberge-le-panier,
 .tarif-hotel-amina {
 line-height: 1.4;
-margin-top: -40%;
+margin-top: -35%;
 margin-left: 4%;
-
 }
 .more {
 font-size: 1.2em;
-margin-top: 15%;
-margin-left: 5.5%;
+margin-top: 7%;
+margin-left: 3.5%;
 }
 
 /*ASIDE*/
@@ -369,9 +367,7 @@ margin-left: 5.5%;
   left: 65%;
   align-self: center;
   flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
-  justify-content: space-between;
+ 
 }
 #cadre-grey {
   background-color: #f2f2f2; /* Arriére-plan gris*/
@@ -379,18 +375,15 @@ margin-left: 5.5%;
   border-bottom: 2px;
   border-radius: 16px;
   width: 33%;
-  height: 580px;
-  margin-top: -3.2%;
+  height: 670px;
+  
 }
 .most-popular {
   display: flex;
-  position: absolute;
-  top: 1.7%;
-  left: 7%;
+  margin-left: 6%;
 }
 .fas.fa-chart-line {
-  position: absolute;
-  left: 179%;
+  margin-left: 35%;
 }
 .soleil-img,
 .eau-img,
@@ -412,49 +405,49 @@ margin-left: 5.5%;
   max-height: 100%;
 }
 .soleil-img {
-  position: absolute;
-  top: 79px;
-  left: 0.01%;
+  
 }
 .eau-img {
-  position: absolute;
-  top: 275px;
-  left: 0.01%;
+  margin-top: 15%;
 }
 .bleu-img {
-  position: absolute;
-  top: 475px;
-  left: 0.01%;
+  margin-top: 15%
 }
 .tarif-hotel-soleil-matin {
-  position: absolute;
-  top: 16%;
-  left: 38%;
+  margin-top: -24%;
+  margin-left: 40%;
+}
+.price1 {
+  margin-left: 40%;
+  line-height: 0.01
 }
 .tarif-auberge-de-l-eau {
-  position: relative;
-  top: 19rem;
-  left: 11.5rem;
+  margin-top: -24%;
+  margin-left: 40%;
+}
+.price2 {
+  margin-left: 40%;
+  line-height: 0.01
 }
 .tarif-hotel-bleu {
-  position: relative;
-  top: 27rem;
-  left: 11.6rem;
+  margin-top: -24%;
+    margin-left: 38%;
+}
+.price3 {
+  margin-left: 40%;
+  line-height: 0.01
 }
 .star1 {
-  position: absolute;
-  top: 29%;
-  left: 38%;
+  margin-left: 40%;
+  padding-top: 4%;
 }
 .star2 {
-  position: absolute;
-  top: 58%;
-  left: 38%;
+  margin-left: 40%;
+  padding-top: 4%;
 }
 .star3 {
-  position: absolute;
-  top: 87%;
-  left: 38%;
+  margin-left: 40%;
+  padding-top: 4%
 }
 
 /*Troisiéme et derniére section*/
@@ -586,7 +579,7 @@ margin-left: 5.5%;
 /*fOOTER*/
 
 footer {
-  flex-shrink: 0; /*definit le facteur de rétrecissement d'un element*/
+  flex-shrink: 0; /*capacité d'un élément flexible à se rétrécir si nécessaire*/
   width: 105%;
   background-color: #f2f2f2;
 }
