@@ -24,14 +24,15 @@ body {
   margin: auto;
 }
 .logoreservia {
-  margin: 2.5em 16.5em;
+  margin: 2.2%;
+  margin-left: 4.5%;
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-right: 120px;
-  }
+}
 .border-topi {
   border-top: 3px solid;
   color: #0065fc;
@@ -59,26 +60,26 @@ header nav ul li a {
 /*Premiere section*/
 
 .main {
-  margin: 40px 270px;
-  display: block;
+  margin: auto;
+  display: block;    /*a verifier*/ /*valeur par défaut, elements les un en dessous de autres, oblige à revenir à la ligne*/
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
+  width: 90%;
 }
 .searchheader {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   justify-content: center;
-  height: 70px; /* Hauteur pour que les éléments aient la place de bouger */
+  height: 35px; /* Hauteur pour que les éléments aient la place de bouger */
 }
-h1 {
+ h1 {
   margin-left: 0%;
-  position: absolute;
-  top: 15%;
+  margin-top: -3%;
 }
 p {
   margin: 0;
   height: 0;
-}
+  }
 .searchForm {
   display: inline-flex;
   max-width: 100%;
@@ -134,10 +135,10 @@ p {
   align-items: center; /*Aligne tout*/
   max-width: 100%;
   margin-top: 1.8%; /*espace avec Marseille*/
-  }
-  .filtres {
-    margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
-  }
+}
+.filtres {
+  margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
+}
 .money,
 .child,
 .famililal,
@@ -246,22 +247,12 @@ p {
 /*Deuxiéme section*/
 /* Trois premiéres images horizontales*/
 
-.location {
-  display: flex; 
-  flex-wrap: wrap;  /*indique que les éléments flexibles sont contraints à être disposés sur plusieurs lignes*/
-  margin-top: 1.5%; /*Margin avec info*/
-  align-self: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
-  justify-content: space-between;
-}
+
 #location {
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  width: 68%;
   height: 670px;
 }
 .marseille-hosting {
@@ -270,12 +261,20 @@ p {
   height: 3rem;
   margin-left: 34px;
 }
+.row-location {
+  display: flex; 
+  flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
+  margin: auto;   /*verifier*/
+  align-items: flex-start; /*positionne en haut du container*/
+  justify-content: space-evenly;  /*Espacement identique*/
+  }
 .auberge-cannebiere,
 .hotel-du-port,
 .hotel-des-mouettes {
   width: 245px;
   height: 130px;
-  margin: 30px 15px 80px 30px; /*a verifier 318 a 321*/
+  margin: 20px 0px 20px 10px;
+  padding: 0px; /*a voir*/
   cursor: pointer;
 }
 .cannebiere-img,
@@ -290,44 +289,17 @@ p {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 128px;
+  height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 253px;
-}
-.port-img {
-  margin-left: 11%;
-}
-.cannebiere-img {
-  position: absolute;
-  top: 34rem;
-}
-.port-img {
-  position: absolute;
-  top: 34rem;
-  left: 24.1rem;
-}
-.mouettes-img {
-  position: relative;
-  top: 3.2rem;
-  left: 110px;
-}
-.tarif-cannebiere {
-  position: relative;
-  top: 47%;
-  left: 9%;
-  line-height: 1.4; /*hauteur de l'interligne par rapport à la police*/
-}
-.tarif-hotel-du-port {
-  position: absolute;
-  top: 43rem;
-  left: 33%;
-  line-height: 1.4;
-}
+  width: 200px;
+ }
+ 
+.tarif-cannebiere,
+.tarif-hotel-du-port,
 .tarif-hotel-les-mouettes {
-  position: relative;
-  top: -1.8rem;
-  left: 54%;
-  line-height: 1.4;
+line-height: 1.4;
+margin-top: -37%;
+margin-left: 4%;
 }
 .fas.fas.fa-star {
   color: #0065fc;
@@ -338,22 +310,20 @@ p {
 
 /*Toujours deuxiéme section: trois derniéres images horizontales*/
 
-.location-bis {
+.row-location-bis {
   display: flex; 
-  flex-wrap: wrap;
-  margin-top: 1.9%;
-  align-self: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
-  justify-content: space-between;
+  flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
+  align-items: center; 
+  margin-top: -40%;
+  justify-content: space-evenly;      /*Espacement identique*/
 }
 .hotel-de-la-mer,
-.Auberge-le-panier,
-.hotel-chez-Amina {
+.auberge-le-panier,
+.hotel-chez-amina {
   width: 245px;
   height: 130px;
-  margin: 30px 15px 80px 30px; /*a verifier 318 a 321*/
+  margin: 90px 0px 20px 10px;
+  padding: 0px; /*a voir*/
   cursor: pointer;
 }
 .ancre {
@@ -371,59 +341,22 @@ p {
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-      height: 128px;
-      object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  width: 255px;
-}
-.mer-img {
-  position: absolute;
-  top: 805px;
-  left: 295px;
-  width: 256px; /*De with à object-fit pour dimension image que height=image deformée*/
-  height: 127px;
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 200px;
 }
-.panier-img {
-  position: absolute;
-  top: 805px;
-  left: 31.5%;
-  height: 127px;
-}
-.amina-img {
-  height: 8rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 13.5%; /*largeur*/
-  max-height: 100%;
-  position: absolute;
-  top: 805px;
-  left: 890px;
-}
-.tarif-hotel-de-la-mer {
-  position: absolute;
-  top: 104%;
-  left: 17%;
-  line-height: 1.4; /*hauteur de l'interligne par rapport à la police*/
-}
-.tarif-auberge-le-panier {
-  position: absolute;
-  top: 104%;
-  left: 32.9%;
-  line-height: 1.4;
-}
-.tarif-hotel-Amina {
-  position: absolute;
-  top: 104%;
-  left: 49%;
-  line-height: 1.4;
+.tarif-hotel-de-la-mer,
+.tarif-auberge-le-panier,
+.tarif-hotel-amina {
+line-height: 1.4;
+margin-top: -35%;
+margin-left: 4%;
 }
 .more {
-  position: absolute;
-  top: 118%;
-  left: 16%;
-  margin: 2px 5px 10px;
-  font-weight: bold;
-  font-size: 1.2em;
+font-size: 1.2em;
+margin-top: 7%;
+margin-left: 3.5%;
 }
 
 /*ASIDE*/
@@ -434,27 +367,23 @@ p {
   left: 65%;
   align-self: center;
   flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
-  justify-content: space-between;
+ 
 }
 #cadre-grey {
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  width: 26%;
+  width: 33%;
   height: 670px;
+  
 }
 .most-popular {
   display: flex;
-  position: absolute;
-  top: 1.7%;
-  left: 7%;
+  margin-left: 6%;
 }
 .fas.fa-chart-line {
-  position: absolute;
-  left: 179%;
+  margin-left: 35%;
 }
 .soleil-img,
 .eau-img,
@@ -475,50 +404,47 @@ p {
   width: 28%; /*largeur*/
   max-height: 100%;
 }
-.soleil-img {
-  position: absolute;
-  top: 79px;
-  left: 0.01%;
-}
 .eau-img {
-  position: absolute;
-  top: 275px;
-  left: 0.01%;
+  margin-top: 15%;
 }
 .bleu-img {
-  position: absolute;
-  top: 475px;
-  left: 0.01%;
+  margin-top: 15%
 }
 .tarif-hotel-soleil-matin {
-  position: absolute;
-  top: 16%;
-  left: 38%;
+  margin-top: -24%;
+  margin-left: 40%;
+}
+.price1 {
+  margin-left: 40%;
+  line-height: 0.01
 }
 .tarif-auberge-de-l-eau {
-  position: relative;
-  top: 19rem;
-  left: 11.5rem;
+  margin-top: -24%;
+  margin-left: 40%;
+}
+.price2 {
+  margin-left: 40%;
+  line-height: 0.01
 }
 .tarif-hotel-bleu {
-  position: relative;
-  top: 27rem;
-  left: 11.6rem;
+  margin-top: -24%;
+    margin-left: 38%;
+}
+.price3 {
+  margin-left: 40%;
+  line-height: 0.01
 }
 .star1 {
-  position: absolute;
-  top: 29%;
-  left: 38%;
+  margin-left: 40%;
+  padding-top: 4%;
 }
 .star2 {
-  position: absolute;
-  top: 58%;
-  left: 38%;
+  margin-left: 40%;
+  padding-top: 4%;
 }
 .star3 {
-  position: absolute;
-  top: 87%;
-  left: 38%;
+  margin-left: 40%;
+  padding-top: 4%
 }
 
 /*Troisiéme et derniére section*/
@@ -529,9 +455,9 @@ p {
   align-self: center;
   flex-direction: column;
   justify-content: space-between;
-  }
+}
 .activites-marseille {
-  margin-top: -15.2rem;
+  margin-top: 10rem;
 }
 .vieux-port-img {
   border-bottom: white solid 62px;
@@ -539,8 +465,8 @@ p {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
   object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 200%;
-  width: 22.4%;
+  height: 100%;
+  width: 20%;
   object-fit: cover;
 }
 .title-port {
@@ -557,7 +483,7 @@ p {
   height: 13.5rem;
   object-fit: cover;
   max-width: 100%;
-  width: 17.5%; /*largeur*/
+  width: 13%; /*largeur*/
   max-height: 100%;
   position: absolute;
   top: 133%;
@@ -650,7 +576,7 @@ p {
 /*fOOTER*/
 
 footer {
-  flex-shrink: 0;               /*definit le facteur de rétrecissement d'un element*/
+  flex-shrink: 0; /*capacité d'un élément flexible à se rétrécir si nécessaire*/
   width: 105%;
   background-color: #f2f2f2;
 }
@@ -677,13 +603,13 @@ footer {
 .site {
   margin-left: -2.5rem;
 }
-.charte{
+.charte {
   position: relative;
   left: -18.2%;
 }
 .contact {
- position: relative;
- left: -24%;
+  position: relative;
+  left: -24%;
 }
 .ancrebis {
   color: black;
@@ -706,38 +632,36 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media all and (max-width: 1024px) 
-{
-    .logoreservia
-    {
-        width: auto;
-        margin-left: 2%;
-    }
+@media all and (max-width: 1024px) {
+  .logoreservia {
+    width: auto;
+    margin-left: 2%;
+  }
 
-    nav
-    {
-      width: auto;
-      text-align: left;
-    }
+  nav {
+    width: auto;
+    text-align: left;
+  }
 
-    nav ul 
-    {
-      flex-direction: column;
-    }
+  nav ul {
+    flex-direction: column;
+  }
 
-    nav li 
-    {
-      padding-left: 4px;
-    }
-    nav a 
-    {
-      font-size: 1.1em;
-    }
+  nav li {
+    padding-left: 4px;
+  }
+  nav a {
+    font-size: 1.1em;
+  }
 
-    .searchfilters 
-    {
-      flex-direction: column;
+  .searchfilters {
+    flex-direction: column;
+  }
+}
 
-    }
-
- }
+@media (max-width: 500px){
+  .row-location{
+    flex-direction: column;
+    height: auto;
+  }
+}
