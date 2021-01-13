@@ -404,9 +404,6 @@ margin-left: 3.5%;
   width: 28%; /*largeur*/
   max-height: 100%;
 }
-.soleil-img {
-  
-}
 .eau-img {
   margin-top: 15%;
 }
@@ -468,8 +465,8 @@ margin-left: 3.5%;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
   object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 200%;
-  width: 22.4%;
+  height: 100%;
+  width: 20%;
   object-fit: cover;
 }
 .title-port {
@@ -486,7 +483,7 @@ margin-left: 3.5%;
   height: 13.5rem;
   object-fit: cover;
   max-width: 100%;
-  width: 17.5%; /*largeur*/
+  width: 13%; /*largeur*/
   max-height: 100%;
   position: absolute;
   top: 133%;
