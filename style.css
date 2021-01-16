@@ -286,11 +286,7 @@ header nav ul li a {
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
-.tarif-cannebiere,
-.tarif-hotel-du-port,              /*enlever sur le html*/
-.tarif-hotel-les-mouettes {
-  
-}
+
 .tarif1 {
   line-height: 0.01;
 }
@@ -307,7 +303,6 @@ header nav ul li a {
   display: flex;
   flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
   align-items: center;
-  
   justify-content: space-evenly; /*Espacement identique*/
 }
 .hotel-de-la-mer,
@@ -329,17 +324,13 @@ header nav ul li a {
 .amina-img {
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
-.tarif-hotel-de-la-mer,
-.tarif-auberge-le-panier, /*ENLEVER SUR HTML*/
-.tarif-hotel-amina {
-  
-}
+
 .more {
   font-size: 1.2em;
   margin: auto;
@@ -362,8 +353,7 @@ header nav ul li a {
   height: 670px;
 }
 .most-popular {
-  margin-top: 4%;
-  margin-left: 6%;
+  
 }
 .fas.fa-chart-line {
   margin-left: 175%;
@@ -373,56 +363,56 @@ header nav ul li a {
 .hotel-soleil-matin,
 .auberge-de-l-eau,
 .hotel-bleu {
-  width: 29%;
+  width: 45%;
   margin: 20px 0px 20px 10px;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   padding: 1%;
+  display: -webkit-inline-box;
+  padding-right: 45%;
 }
 .soleil-img,
 .eau-img,
 .bleu-img {
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
+.mas {
+ 
+}
 .soleil-img {
-  margin-top: 12%;
+  
 }
 .eau-img {
-  margin-top: 8%;
+ 
 }
 .bleu-img {
-  margin-top: 15%;
+  
 }
-.tarif-hotel-soleil-matin {
-  margin-top: -34%;
-  margin-left: 40%;
+.tarif-hotel-soleil-matin {        /*les enlever tous*/
+  margin-top: 1%;
 }
 .tarif-auberge-de-l-eau {
-  margin-top: -34%;
-  margin-left: 40%;
+ 
 }
 .tarif-hotel-bleu {
-  margin-top: -34%;
-  margin-left: 40%;
+  
 }
 .price1,
 .price2,
 .price3 {
-  margin-left: 40%;
+  
   line-height: 0.01;
 }
 .star1,
 .star2,
 .star3 {
-  margin-left: 40%;
-  padding-top: 4%;
+  
 }
 
 /*Troisiéme et derniére section*/
