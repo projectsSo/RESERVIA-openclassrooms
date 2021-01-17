@@ -16,14 +16,14 @@ body {
 .header {
   top: 0;
   width: 98%;
-  z-index: 10;  /*precise l'empilement de l'element sur l'axe vertical*/
+  z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
   display: flex;
   justify-content: space-between;
   margin: auto;
   padding-left: 4%;
   padding-top: 2%;
   padding-bottom: 3%;
-  }
+}
 .logoreservia {
 }
 header nav {
@@ -66,7 +66,6 @@ header nav ul li a {
 .searchheader {
   display: flex;
   flex-direction: column;
-  
   justify-content: center;
   height: 35px; /* Hauteur pour que les éléments aient la place de bouger */
 }
@@ -76,7 +75,7 @@ header nav ul li a {
   margin-block-end: 4em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  }
+}
 .searchForm {
   display: inline-flex;
   max-width: 100%;
@@ -143,7 +142,6 @@ header nav ul li a {
 .dogi {
   display: flex;
   align-items: center;
-  margin-left: -1%;
 }
 .fas.fa-money-bill-wave,            /*Ne fonctionne pas sans le deuxiéme petit point*/               
 .fas.fa-child,
@@ -182,24 +180,17 @@ header nav ul li a {
   font-family: "Raleway", "Sans serif";
 }
 .eco {
-  width: 9rem; /*longueur border-radius*/
-  position: relative;
-  left: -1rem;
-}
+  width: 7rem; /*longueur border-radius*/
+  }
 .familial {
-  width: 7.5rem;
-  position: relative;
-  left: -1rem;
-}
+  width: 5.5rem;
+  }
 .romantique {
-  width: 8.8rem;
-  position: relative;
-  left: -1rem;
-}
+  width: 7rem;
+  }
 .animaux {
-  width: 12rem;
-  position: relative;
-  left: -1rem;
+  width: 10rem;
+  
 }
 .eco:hover,
 .familial:hover,
@@ -211,11 +202,7 @@ header nav ul li a {
 /*info*/
 
 .info-clients {
-  margin-top: 1.5rem; /*Margin avec search-filters*/
-  align-self: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
+  margin-top: 2%; /*Margin avec search-filters*/
 }
 .fas.fa-info {
   color: #0065fc;
@@ -286,7 +273,6 @@ header nav ul li a {
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
-
 .tarif1 {
   line-height: 0.01;
 }
@@ -330,7 +316,6 @@ header nav ul li a {
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
-
 .more {
   font-size: 1.2em;
   margin: auto;
@@ -342,7 +327,8 @@ header nav ul li a {
 .populaire {
   display: flex;
   flex-direction: column;
-  }
+  justify-content: space-evenly;
+}
 
 #cadre-grey {
   background-color: #f2f2f2; /* Arriére-plan gris*/
@@ -353,24 +339,25 @@ header nav ul li a {
   height: 670px;
 }
 .most-popular {
-  
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
 }
 .fas.fa-chart-line {
-  margin-left: 175%;
-  margin-top: -15%;
-  display: flex;
+  margin-left: 32%;
 }
 .hotel-soleil-matin,
 .auberge-de-l-eau,
 .hotel-bleu {
-  width: 45%;
+  width: 58%;
   margin: 20px 0px 20px 10px;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   padding: 1%;
   display: -webkit-inline-box;
-  padding-right: 45%;
+  padding-right: 38%;
+  line-height: 1;
 }
 .soleil-img,
 .eau-img,
@@ -378,56 +365,37 @@ header nav ul li a {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  height: 100px;
+  height: 140px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 100%;
+  width: 90%;
 }
-.mas {
- 
-}
-.soleil-img {
-  
-}
-.eau-img {
- 
-}
-.bleu-img {
-  
-}
-.tarif-hotel-soleil-matin {        /*les enlever tous*/
-  margin-top: 1%;
-}
-.tarif-auberge-de-l-eau {
- 
-}
+.tarif-hotel-soleil-matin,
+.tarif-auberge-de-l-eau,
 .tarif-hotel-bleu {
-  
-}
-.price1,
-.price2,
-.price3 {
-  
-  line-height: 0.01;
-}
-.star1,
-.star2,
-.star3 {
-  
+  margin-top: 0.1%;
 }
 
 /*Troisiéme et derniére section*/
 
-.activites-marseille {
-  margin-top: 1%;
-}
-.activites {
+
+#activites {
   display: inline-block;
   margin-top: 0%;
-  }
-.vieux-port-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+}
+.activites-marseille {
+ 
+}
+.acivites {
+  width: 29%;
+  margin: 10px 0px 20px 10px;
   cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  padding: 15%;
+  border-bottom: white solid 62px; 
+}
+.vieux-port-img {
+  
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
   object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
   height: 100%;
@@ -630,4 +598,3 @@ footer {
     height: auto;
   }
 }
-
