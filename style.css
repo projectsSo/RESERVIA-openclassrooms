@@ -378,171 +378,185 @@ header nav ul li a {
 /*Troisiéme et derniére section*/
 
 
-#activites {
-  display: inline-block;
-  margin-top: 0%;
-}
-.activites-marseille {
- 
-}
-.acivites {
-  width: 29%;
-  margin: 10px 0px 20px 10px;
+.activity {
+  display: flex;
+  height: 600px;
+  justify-content: space-between; /*Espacement identique*/
+  align-content: space-around; /*ou space evenly*/
+  padding-bottom: 3px;
+  width: 100%;
+  align-items: flex-start;
+  }
+  /*port idem calanques*/
+  .bloc1 {
+    width: 70%;
+    height: 900px;
+  }
+.port {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
   border-radius: 30px;
   background: white;
-  padding: 15%;
-  border-bottom: white solid 62px; 
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
 }
-.vieux-port-img {
-  
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+ .vieux-port-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 470px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+}
+/*Images fort et iles l'une en dessous de l'autre*/
+.bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 500px;
+}
+.fort {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa;                      /*ombres*/
+  height: 230px;
   height: 100%;
-  width: 20%;
-  object-fit: cover;
-}
-.title-port {
-  position: absolute;
-  top: 182.5%;
-  left: 15.5%;
-}
-.fort-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+  }
+ .fort-img {
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  object-fit: cover;                                   /*Façon dont l'image s'adapte à son conteneur*/
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 200px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+  }
+.iles {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ 
+ .iles-du-Frioul-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 150px;
-  object-fit: cover;
-  max-width: 100%;
-  width: 15%; /*largeur*/
-  max-height: 100%;
-  margin-left: 22%;
-  margin-top: -35%;
-  display: block;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
 }
-.title-fort {
-  position: absolute;
-  top: 157%;
-  left: 34%;
-}
-.iles-du-Frioul-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+ .calanques {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  object-fit: cover;                                      /*Façon dont l'image s'adapte à son conteneur*/
-  height: 8.5rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 17.5%; /*largeur*/
-  max-height: 100%;
-  position: absolute;
-  top: 167%;
-  left: 33%;
-}
-.title-iles {
-  position: absolute;
-  top: 182%;
-  left: 34%;
-}
-.calanques-img {
-  border-bottom: white solid 62px;
   border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ .calanques-img {
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 48.7%;
-  object-fit: cover;
-  width: 15.5%;
-  margin-left: 39%;
-  position: absolute;
-  top: 132.7%;
-}
-.title-calanques {
-  position: absolute;
-  top: 182%;
-  left: 54.5%;
-}
-.notre-dame-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-    cursor: pointer;
-    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 11rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 20%; /*largeur*/
-  max-height: 100%;
-  position: absolute;
-  top: 133%;
-  left: 71.4%;
-}
-.title-notre-dame {
-  position: absolute;
-  top: 153%;
-  left: 72.5%;
-}
-.longchamp-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 470px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+  }
+
+/*Images notre dame et parc lonchamps l'une en dessous de l'autre*/
+ .notre {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 10.5rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 20%; /*largeur*/
-  max-height: 100%;
-  position: absolute;
-  top: 163%;
-  left: 71.4%;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ .notre-dame-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 150px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
 }
-.title-longchamp {
-  position: absolute;
-  top: 182%;
-  left: 72.5%;
+ .long {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ .longchamp-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 200px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+  }
+ 
+.title {
+ padding-left: 5%;
 }
+
 
 /*fOOTER*/
 
-footer {
-  flex-shrink: 0; /*capacité d'un élément flexible à se rétrécir si nécessaire*/
-  width: 105%;
-  background-color: #f2f2f2;
-}
-.contenu-footer {
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+.footer {
   display: flex;
-  justify-content: center;
-  font-size: 18px;
-  justify-content: space-between;
-  line-height: 1;
+  margin-top: 70px;
+  background-color: #F2F2F2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  bottom: 0;
+}
+
+
+  
+.contenu-footer {
+ display: flex;
+  width: 1205px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc-footer-site,
 .bloc-footer-charte,
 .bloc-footer-aide {
-  margin-top: -2%;
+  display: block;
+  height: fit-content;   /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
+  width: 26%;
+}
+.bloc-footer-charte,
+.bloc-footer-aide {
+ 
 }
 .site,
 .charte,
 .contact {
   list-style-type: none;
+  
 }
 .site {
-  margin-left: -2.5rem;
+  
 }
 .charte {
-  position: relative;
-  left: -18.2%;
+  
 }
 .contact {
-  position: relative;
-  left: -24%;
+  
 }
 .ancrebis {
   color: black;
@@ -553,14 +567,13 @@ footer {
   text-decoration: underline;
 }
 .bloc-footer-site {
-  margin-left: 13.5%;
+  
 }
 .bloc-footer-charte {
-  margin-right: 35%;
+  
 }
 .bloc-footer-aide {
-  position: relative;
-  right: 37.5rem;
+  
 }
 
 /*MEDIA QUERIES*/
