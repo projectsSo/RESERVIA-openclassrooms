@@ -24,8 +24,6 @@ body {
   padding-top: 2%;
   padding-bottom: 3%;
 }
-.logoreservia {
-}
 header nav {
   display: flex;
   align-items: center;
@@ -373,7 +371,7 @@ header nav ul li a {
   margin-top: 0.1%;
 }
 
-/*Troisiéme et derniére section*/
+/*Troisiéme et derniére section, activites*/
 
 
 .activity {
@@ -397,6 +395,7 @@ header nav ul li a {
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  padding-bottom: 1%;
 }
  .vieux-port-img {
   border-radius: 10px;
@@ -447,7 +446,7 @@ header nav ul li a {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 150px;
+  height: 165px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
@@ -458,6 +457,7 @@ header nav ul li a {
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  padding-bottom: 1%;
  }
  .calanques-img {
   border-radius: 10px;
@@ -500,7 +500,7 @@ header nav ul li a {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 200px;
+  height: 215px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
   }
