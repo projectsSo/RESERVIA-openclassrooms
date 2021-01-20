@@ -15,23 +15,21 @@ body {
 
 .header {
   top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
+  width: 98%;
+  z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
   display: flex;
   justify-content: space-between;
-  padding-left: 0.4%;
   margin: auto;
+  padding-left: 4%;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
 .logoreservia {
-  margin: 2.9%;
-  margin-left: 4.5%;
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 120px;
 }
 .border-topi {
   border-top: 3px solid;
@@ -68,16 +66,15 @@ header nav ul li a {
 .searchheader {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   justify-content: center;
   height: 35px; /* Hauteur pour que les éléments aient la place de bouger */
 }
-h1 {
-  margin-left: 0%;
-  margin-top: -3%;
-}
 .centre {
-  margin-top: -1%;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 4em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .searchForm {
   display: inline-flex;
@@ -133,7 +130,7 @@ h1 {
   display: flex;
   align-items: center; /*Aligne tout*/
   max-width: 100%;
-  margin-top: 1.8%; /*espace avec Marseille*/
+  margin-top: 2%; /*espace avec Marseille*/
 }
 .filtres {
   margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
@@ -145,7 +142,6 @@ h1 {
 .dogi {
   display: flex;
   align-items: center;
-  margin-left: -1%;
 }
 .fas.fa-money-bill-wave,            /*Ne fonctionne pas sans le deuxiéme petit point*/               
 .fas.fa-child,
@@ -184,24 +180,17 @@ h1 {
   font-family: "Raleway", "Sans serif";
 }
 .eco {
-  width: 9rem; /*longueur border-radius*/
-  position: relative;
-  left: -1rem;
-}
+  width: 7rem; /*longueur border-radius*/
+  }
 .familial {
-  width: 7.5rem;
-  position: relative;
-  left: -1rem;
-}
+  width: 5.5rem;
+  }
 .romantique {
-  width: 8.8rem;
-  position: relative;
-  left: -1rem;
-}
+  width: 7rem;
+  }
 .animaux {
-  width: 12rem;
-  position: relative;
-  left: -1rem;
+  width: 10rem;
+  
 }
 .eco:hover,
 .familial:hover,
@@ -213,11 +202,7 @@ h1 {
 /*info*/
 
 .info-clients {
-  margin-top: 1.5rem; /*Margin avec search-filters*/
-  align-self: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
+  margin-top: 2%; /*Margin avec search-filters*/
 }
 .fas.fa-info {
   color: #0065fc;
@@ -246,18 +231,19 @@ h1 {
 /*Deuxiéme section*/
 /* Trois premiéres images horizontales*/
 
+#containerhebergement {
+  display: flex;
+  justify-content: space-between; /*a enlever*/
+}
 #location {
   background-color: #f2f2f2; /* Arriére-plan gris*/
-  border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
   height: 670px;
 }
 .marseille-hosting {
-  display: flex;
-  align-items: flex-end;
-  height: 3rem;
-  margin-left: 34px;
+  margin: 0;
+  padding: 20px;
 }
 .row-location {
   display: flex;
@@ -269,34 +255,23 @@ h1 {
 .auberge-cannebiere,
 .hotel-du-port,
 .hotel-des-mouettes {
-  width: 245px;
-  height: 130px;
+  width: 29%;
   margin: 20px 0px 20px 10px;
-  padding: 0px; /*a voir*/
   cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  padding: 1%;
 }
 .cannebiere-img,
 .port-img,
 .mouettes-img {
-  border: white solid 70px; /* Encadrement blanc image*/
-  border-top: white solid 7px;
-  border-left: white solid 7px;
-  border-right: white solid 7px;
-  border-bottom: white solid 87px;
-  border-radius: 30px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 200px;
-}
-
-.tarif-cannebiere,
-.tarif-hotel-du-port,
-.tarif-hotel-les-mouettes {
-  margin-top: -43%;
-  margin-left: 4%;
+  width: 100%;
 }
 .tarif1 {
   line-height: 0.01;
@@ -314,17 +289,17 @@ h1 {
   display: flex;
   flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
   align-items: center;
-  margin-top: -40%;
   justify-content: space-evenly; /*Espacement identique*/
 }
 .hotel-de-la-mer,
 .auberge-le-panier,
 .hotel-chez-amina {
-  width: 245px;
-  height: 130px;
-  margin: 45px 0px 20px 10px;
-  padding: 0px; /*a voir*/
+  width: 29%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  padding: 1%;
 }
 .ancre {
   color: black;
@@ -333,29 +308,18 @@ h1 {
 .mer-img,
 .panier-img,
 .amina-img {
-  border: white solid 70px; /* Encadrement blanc image*/
-  border-top: white solid 7px;
-  border-left: white solid 7px;
-  border-right: white solid 7px;
-  border-bottom: white solid 87px;
-  border-radius: 30px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 200px;
-}
-.tarif-hotel-de-la-mer,
-.tarif-auberge-le-panier,
-.tarif-hotel-amina {
-  margin-top: -43%;
-  margin-left: 4%;
+  width: 100%;
 }
 .more {
   font-size: 1.2em;
-  margin-top: 8%;
-  margin-left: 3.5%;
+  margin: auto;
+  padding: 20px;
 }
 
 /*ASIDE*/
@@ -363,8 +327,7 @@ h1 {
 .populaire {
   display: flex;
   flex-direction: column;
-  margin-top: -52.8%;
-  margin-left: 67%;
+  justify-content: space-evenly;
 }
 
 #cadre-grey {
@@ -376,227 +339,224 @@ h1 {
   height: 670px;
 }
 .most-popular {
-  margin-top: 4%;
-  margin-left: 6%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
 }
 .fas.fa-chart-line {
-  margin-left: 175%;
-  margin-top: -15%;
-  display: flex;
+  margin-left: 32%;
+}
+.hotel-soleil-matin,
+.auberge-de-l-eau,
+.hotel-bleu {
+  width: 58%;
+  margin: 20px 0px 20px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  padding: 1%;
+  display: -webkit-inline-box;
+  padding-right: 38%;
+  line-height: 1;
 }
 .soleil-img,
 .eau-img,
 .bleu-img {
-  border: white solid 70px; /* Encadrement blanc image*/
-  border-top: white solid 7px;
-  border-left: white solid 7px;
-  border-right: white solid 200px;
-  border-bottom: white solid 7px;
-  border-radius: 30px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  margin-left: 1.7rem;
-  height: 8.2rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 28%; /*largeur*/
-  max-height: 100%;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  height: 140px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 90%;
 }
-.soleil-img {
-  margin-top: 12%;
-}
-.eau-img {
-  margin-top: 8%;
-}
-.bleu-img {
-  margin-top: 15%;
-}
-.tarif-hotel-soleil-matin {
-  margin-top: -34%;
-  margin-left: 40%;
-}
-.tarif-auberge-de-l-eau {
-  margin-top: -34%;
-  margin-left: 40%;
-}
+.tarif-hotel-soleil-matin,
+.tarif-auberge-de-l-eau,
 .tarif-hotel-bleu {
-  margin-top: -34%;
-  margin-left: 40%;
-}
-.price1,
-.price2,
-.price3 {
-  margin-left: 40%;
-  line-height: 0.01;
-}
-.star1,
-.star2,
-.star3 {
-  margin-left: 40%;
-  padding-top: 4%;
+  margin-top: 0.1%;
 }
 
 /*Troisiéme et derniére section*/
 
-.activites-marseille {
-  margin-top: 1%;
-}
-.activites {
-  display: inline-block;
-  margin-top: 0%;
+
+.activity {
+  display: flex;
+  height: 600px;
+  justify-content: space-between; /*Espacement identique*/
+  align-content: space-around; /*ou space evenly*/
+  padding-bottom: 3px;
+  width: 100%;
+  align-items: flex-start;
   }
-.vieux-port-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+  /*port idem calanques*/
+  .bloc1 {
+    width: 70%;
+    height: 900px;
+  }
+.port {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+}
+ .vieux-port-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 470px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+}
+/*Images fort et iles l'une en dessous de l'autre*/
+.bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 500px;
+}
+.fort {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa;                      /*ombres*/
+  height: 230px;
   height: 100%;
-  width: 20%;
-  object-fit: cover;
-}
-.title-port {
-  position: absolute;
-  top: 182.5%;
-  left: 15.5%;
-}
-.fort-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+  }
+ .fort-img {
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  object-fit: cover;                                   /*Façon dont l'image s'adapte à son conteneur*/
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 200px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+  }
+.iles {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ 
+ .iles-du-Frioul-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 150px;
-  object-fit: cover;
-  max-width: 100%;
-  width: 15%; /*largeur*/
-  max-height: 100%;
-  margin-left: 22%;
-  margin-top: -35%;
-  display: block;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
 }
-.title-fort {
-  position: absolute;
-  top: 157%;
-  left: 34%;
-}
-.iles-du-Frioul-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+ .calanques {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-  object-fit: cover;                                      /*Façon dont l'image s'adapte à son conteneur*/
-  height: 8.5rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 17.5%; /*largeur*/
-  max-height: 100%;
-  position: absolute;
-  top: 167%;
-  left: 33%;
-}
-.title-iles {
-  position: absolute;
-  top: 182%;
-  left: 34%;
-}
-.calanques-img {
-  border-bottom: white solid 62px;
   border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ .calanques-img {
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 48.7%;
-  object-fit: cover;
-  width: 15.5%;
-  margin-left: 39%;
-  position: absolute;
-  top: 132.7%;
-}
-.title-calanques {
-  position: absolute;
-  top: 182%;
-  left: 54.5%;
-}
-.notre-dame-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-    cursor: pointer;
-    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 11rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 20%; /*largeur*/
-  max-height: 100%;
-  position: absolute;
-  top: 133%;
-  left: 71.4%;
-}
-.title-notre-dame {
-  position: absolute;
-  top: 153%;
-  left: 72.5%;
-}
-.longchamp-img {
-  border-bottom: white solid 62px;
-  border-radius: 30px;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 470px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+  }
+
+/*Images notre dame et parc lonchamps l'une en dessous de l'autre*/
+ .notre {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres/
-    object-fit: cover;  /*Façon dont l'image s'adapte à son conteneur*/
-  height: 10.5rem;
-  object-fit: cover;
-  max-width: 100%;
-  width: 20%; /*largeur*/
-  max-height: 100%;
-  position: absolute;
-  top: 163%;
-  left: 71.4%;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ .notre-dame-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 150px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
 }
-.title-longchamp {
-  position: absolute;
-  top: 182%;
-  left: 72.5%;
+ .long {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+ }
+ .longchamp-img {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
+  height: 200px;
+  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
+  width: 100%;
+  }
+ 
+.title {
+ padding-left: 5%;
 }
+
 
 /*fOOTER*/
 
-footer {
-  flex-shrink: 0; /*capacité d'un élément flexible à se rétrécir si nécessaire*/
-  width: 105%;
-  background-color: #f2f2f2;
-}
-.contenu-footer {
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+.footer {
   display: flex;
-  justify-content: center;
-  font-size: 18px;
-  justify-content: space-between;
-  line-height: 1;
+  margin-top: 70px;
+  background-color: #F2F2F2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  bottom: 0;
+}
+
+
+  
+.contenu-footer {
+ display: flex;
+  width: 1205px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc-footer-site,
 .bloc-footer-charte,
 .bloc-footer-aide {
-  margin-top: -2%;
+  display: block;
+  height: fit-content;   /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
+  width: 26%;
+}
+.bloc-footer-charte,
+.bloc-footer-aide {
+ 
 }
 .site,
 .charte,
 .contact {
   list-style-type: none;
+  
 }
 .site {
-  margin-left: -2.5rem;
+  
 }
 .charte {
-  position: relative;
-  left: -18.2%;
+  
 }
 .contact {
-  position: relative;
-  left: -24%;
+  
 }
 .ancrebis {
   color: black;
@@ -607,14 +567,13 @@ footer {
   text-decoration: underline;
 }
 .bloc-footer-site {
-  margin-left: 13.5%;
+  
 }
 .bloc-footer-charte {
-  margin-right: 35%;
+  
 }
 .bloc-footer-aide {
-  position: relative;
-  right: 37.5rem;
+  
 }
 
 /*MEDIA QUERIES*/
