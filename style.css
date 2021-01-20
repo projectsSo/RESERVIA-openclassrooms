@@ -190,7 +190,6 @@ header nav ul li a {
   }
 .animaux {
   width: 10rem;
-  
 }
 .eco:hover,
 .familial:hover,
@@ -329,7 +328,6 @@ header nav ul li a {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 #cadre-grey {
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border: 20px;
@@ -444,7 +442,6 @@ header nav ul li a {
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
  }
- 
  .iles-du-Frioul-img {
   border-radius: 10px;
   cursor: pointer;
@@ -507,8 +504,7 @@ header nav ul li a {
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
   }
- 
-.title {
+ .title {
  padding-left: 5%;
 }
 
@@ -523,9 +519,6 @@ header nav ul li a {
   padding-bottom: 30px;
   bottom: 0;
 }
-
-
-  
 .contenu-footer {
  display: flex;
   width: 1205px;
@@ -539,24 +532,10 @@ header nav ul li a {
   height: fit-content;   /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
   width: 26%;
 }
-.bloc-footer-charte,
-.bloc-footer-aide {
- 
-}
 .site,
 .charte,
 .contact {
   list-style-type: none;
-  
-}
-.site {
-  
-}
-.charte {
-  
-}
-.contact {
-  
 }
 .ancrebis {
   color: black;
@@ -565,15 +544,6 @@ header nav ul li a {
 }
 .ancrebis:hover {
   text-decoration: underline;
-}
-.bloc-footer-site {
-  
-}
-.bloc-footer-charte {
-  
-}
-.bloc-footer-aide {
-  
 }
 
 /*MEDIA QUERIES*/
