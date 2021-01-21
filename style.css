@@ -14,15 +14,15 @@ body {
 /* HEADER */
 
 .header {
-  top: 0;
   width: 98%;
   z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding-left: 4%;
   padding-top: 2.5%;
-  padding-bottom: 3%;
+}
+#logoreservia {
+  margin-left: 4%;
 }
 header nav {
   display: flex;
@@ -65,7 +65,6 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 35px; /* Hauteur pour que les éléments aient la place de bouger */
 }
 .centre {
   display: block;
@@ -230,7 +229,10 @@ header nav ul li a {
 
 #containerhebergement {
   display: flex;
-  justify-content: space-between; /*a enlever*/
+  justify-content: space-between; 
+}
+#width {
+  width: 66%;
 }
 #location {
   background-color: #f2f2f2; /* Arriére-plan gris*/
@@ -249,19 +251,15 @@ header nav ul li a {
   align-items: flex-start; /*positionne en haut du container*/
   justify-content: space-evenly; /*Espacement identique*/
 }
-.auberge-cannebiere,
-.hotel-du-port,
-.hotel-des-mouettes {
+.hosting {
   width: 29%;
-  margin: 20px 0px 20px 10px;
+  margin: 1%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   padding: 1%;
 }
-.cannebiere-img,
-.port-img,
-.mouettes-img {
+.hosting-img {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
@@ -288,11 +286,9 @@ header nav ul li a {
   align-items: center;
   justify-content: space-evenly; /*Espacement identique*/
 }
-.hotel-de-la-mer,
-.auberge-le-panier,
-.hotel-chez-amina {
+.hosting2 {
   width: 29%;
-  margin: 20px 0px 20px 10px;
+  margin: 1%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
@@ -301,14 +297,12 @@ header nav ul li a {
 .ancre {
   color: black;
   text-decoration: none;
+  display: block;
 }
-.mer-img,
-.panier-img,
-.amina-img {
+.hosting2-img {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
@@ -340,20 +334,24 @@ header nav ul li a {
   padding-left: 5%;
 }
 .fas.fa-chart-line {
-  margin-left: 32%;
+  margin-left: 42%;
 }
 .hotel-soleil-matin,
 .auberge-de-l-eau,
 .hotel-bleu {
-  width: 58%;
-  margin: 20px 0px 20px 10px;
+  width: 90%;
+  margin: 1%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   padding: 1%;
-  display: -webkit-inline-box;
-  padding-right: 38%;
+  display: flex;
   line-height: 1;
+}
+.ancrebis1 {
+  color: black;
+  text-decoration: none;
+  width: 50%;
 }
 .soleil-img,
 .eau-img,
@@ -385,8 +383,7 @@ header nav ul li a {
   }
   /*port idem calanques*/
   .bloc1 {
-    width: 70%;
-    height: 900px;
+    width: 25%;
   }
 .port {
   width: 90%;
@@ -411,17 +408,15 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%;
-  height: 500px;
-}
+  width: 25%;
+  }
 .fort {
-  width: 90%;
-  margin: 20px 0px 20px 10px;
+  width: 92%;
+  margin: 4%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa;                      /*ombres*/
-  height: 230px;
   height: 100%;
   }
  .fort-img {
@@ -434,8 +429,8 @@ header nav ul li a {
   width: 100%;
   }
 .iles {
-  width: 90%;
-  margin: 20px 0px 20px 10px;
+  width: 92%;
+  margin: 4%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
@@ -537,26 +532,34 @@ header nav ul li a {
 .contact {
   list-style-type: none;
 }
-.ancrebis {
+.ancrebis2 {
   color: black;
   text-decoration: none;
   line-height: 1.9;
+  display: block;
 }
-.ancrebis:hover {
+.ancrebis2:hover {
   text-decoration: underline;
 }
 
 /*MEDIA QUERIES*/
 
 @media all and (max-width: 1024px) {
-  .logoreservia {
+  #logoreservia {
     width: auto;
     margin-left: 2%;
+    margin-top: 0%;
   }
-
+ header {
+   display: flex;
+   flex-direction: row;
+ }
   nav {
     width: auto;
     text-align: left;
+  }
+  h1 {
+  margin-top: 20%;
   }
 
   nav ul {
