@@ -24,6 +24,9 @@ body {
 #logoreservia {
   margin-left: 4%;
 }
+#haut {
+ 
+}
 header nav {
   display: flex;
   align-items: center;
@@ -132,15 +135,11 @@ header nav ul li a {
 .filtres {
   margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
 }
-.money,
-.child,
-.famililal,
-.romantico,
-.dogi {
+.fasfa {
   display: flex;
   align-items: center;
 }
-.fas.fa-money-bill-wave,            /*Ne fonctionne pas sans le deuxiéme petit point*/               
+.fas.fa-money-bill-wave,                   
 .fas.fa-child,
 .fas.fa-heart,
 .fas.fa-dog {
@@ -231,7 +230,7 @@ header nav ul li a {
   display: flex;
   justify-content: space-between; 
 }
-#width {
+#hosting1 {
   width: 66%;
 }
 #location {
@@ -336,9 +335,7 @@ header nav ul li a {
 .fas.fa-chart-line {
   margin-left: 42%;
 }
-.hotel-soleil-matin,
-.auberge-de-l-eau,
-.hotel-bleu {
+.hosting-aside {
   width: 90%;
   margin: 1%;
   cursor: pointer;
@@ -353,9 +350,7 @@ header nav ul li a {
   text-decoration: none;
   width: 50%;
 }
-.soleil-img,
-.eau-img,
-.bleu-img {
+.img {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
@@ -363,9 +358,7 @@ header nav ul li a {
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 90%;
 }
-.tarif-hotel-soleil-matin,
-.tarif-auberge-de-l-eau,
-.tarif-hotel-bleu {
+.tarif {
   margin-top: 0.1%;
 }
 
@@ -374,9 +367,7 @@ header nav ul li a {
 
 .activity {
   display: flex;
-  height: 600px;
   justify-content: space-between; /*Espacement identique*/
-  align-content: space-around; /*ou space evenly*/
   padding-bottom: 3px;
   width: 100%;
   align-items: flex-start;
@@ -398,7 +389,6 @@ header nav ul li a {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 470px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
@@ -477,7 +467,6 @@ header nav ul li a {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 150px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
@@ -494,7 +483,6 @@ header nav ul li a {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 215px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
@@ -508,29 +496,19 @@ header nav ul li a {
 
 .footer {
   display: flex;
-  margin-top: 70px;
+  margin-top: 4%;
   background-color: #F2F2F2;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  bottom: 0;
 }
 .contenu-footer {
- display: flex;
-  width: 1205px;
+  display: flex;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-.bloc-footer-site,
-.bloc-footer-charte,
-.bloc-footer-aide {
+.bloc-footer {
   display: block;
   height: fit-content;   /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
   width: 26%;
-}
-.site,
-.charte,
-.contact {
-  list-style-type: none;
 }
 .ancrebis2 {
   color: black;
@@ -552,7 +530,10 @@ header nav ul li a {
   }
  header {
    display: flex;
-   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ #haut {
+  position: sticky;
  }
   nav {
     width: auto;
