@@ -9,12 +9,12 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
-}
+ }
 
 /* HEADER */
 
 .header {
-  width: 98%;
+  width: 90%;
   z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
   display: flex;
   justify-content: space-between;
@@ -24,15 +24,13 @@ body {
 #logoreservia {
   margin-left: 4%;
 }
-#haut {
- 
-}
+
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.border-topi {
+#border-topi {
   border-top: 3px solid;
   color: #0065fc;
 }
@@ -196,9 +194,7 @@ header nav ul li a {
 
 /*info*/
 
-.info-clients {
-  margin-top: 2%; /*Margin avec search-filters*/
-}
+
 .fas.fa-info {
   color: #0065fc;
   cursor: pointer;
@@ -246,7 +242,7 @@ header nav ul li a {
 .row-location {
   display: flex;
   flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
-  margin: auto; /*verifier*/
+  margin: auto;
   align-items: flex-start; /*positionne en haut du container*/
   justify-content: space-evenly; /*Espacement identique*/
 }
@@ -309,7 +305,6 @@ header nav ul li a {
 .more {
   font-size: 1.2em;
   margin: auto;
-  padding: 20px;
 }
 
 /*ASIDE*/
@@ -336,7 +331,7 @@ header nav ul li a {
   margin-left: 42%;
 }
 .hosting-aside {
-  width: 90%;
+  width: 96%;
   margin: 1%;
   cursor: pointer;
   border-radius: 30px;
@@ -371,10 +366,12 @@ header nav ul li a {
   padding-bottom: 3px;
   width: 100%;
   align-items: flex-start;
+  flex-wrap: revert;
+  
   }
   /*port idem calanques*/
   .bloc1 {
-    width: 25%;
+  width: 25%;
   }
 .port {
   width: 90%;
@@ -384,7 +381,7 @@ header nav ul li a {
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   padding-bottom: 1%;
-}
+ }
  .vieux-port-img {
   border-radius: 10px;
   cursor: pointer;
@@ -394,7 +391,8 @@ header nav ul li a {
   width: 100%;
 }
 /*Images fort et iles l'une en dessous de l'autre*/
-.bloc {
+
+.bloc2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -414,7 +412,7 @@ header nav ul li a {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 200px;
+  height: 250px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
   }
@@ -431,11 +429,11 @@ header nav ul li a {
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 165px;
+  height: 140px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
- .calanques {
+.calanques {
   width: 90%;
   margin: 20px 0px 20px 10px;
   cursor: pointer;
@@ -483,7 +481,7 @@ header nav ul li a {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  height: 215px;
+  height: 220px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
   }
@@ -522,46 +520,97 @@ header nav ul li a {
 
 /*MEDIA QUERIES*/
 
-@media all and (max-width: 1024px) {
-  #logoreservia {
-    width: auto;
-    margin-left: 2%;
-    margin-top: 0%;
-  }
- header {
-   display: flex;
-   flex-wrap: wrap;
+@media screen and (max-width: 570px) {
+.logoreservia {
+  margin-left: 18px;}
+
+#haut {
+  display: block;
+  width: fit-content;
+  position: absolute;
+  padding: 26px 0px 8px 20px;
+  top: 0;
+  right: 5%;
  }
- #haut {
-  position: sticky;
- }
-  nav {
-    width: auto;
-    text-align: left;
-  }
-  h1 {
-  margin-top: 20%;
-  }
+#border-topi,
+#activit {
+  display: flex;
+  flex-direction: row;
+    border-top: 3px solid white;
+}
+#activit {
+  flex-direction: row;
+}
 
-  nav ul {
-    flex-direction: column;
+@media all and (max-width: 800px) {
+ 
+  .header {
+    flex-wrap: wrap;
   }
+ 
 
-  nav li {
-    padding-left: 4px;
-  }
-  nav a {
-    font-size: 1.1em;
-  }
-
+ .input-search {
+  width: 10rem; /*longueur border radius*/
+}
   .searchfilters {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fas.fa-info {
+  width: 5%;
+  min-width: 7%;
+}
+.nombre {
+  width: 90%;
+}
+.row-location {
+  
+}
+.more {
+  margin-top: 10%;
+}
+.activity {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: auto;
+    margin-right: 0%;
+    margin-top: 0%;
+    border-radius: 0px;
+    padding: 5%;
+}
+.bloc1,
+.bloc2 {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
-@media (max-width: 500px) {
-  .row-location {
-    flex-direction: column;
-    height: auto;
-  }
+.vieux-port-img,
+.fort-img,
+.iles-du-Frioul-img,
+.calanques-img,
+.notre-dame-img,
+.longchamp-img {
+  height: 150px;
 }
+.footer {
+  width: 100%;
+  margin-right: 0%;
+}
+.contenu-footer {
+  display: block;
+  width: auto;
+  margin: auto;
+}
+.bloc-footer {
+  width: 100%;
+  line-height: 3;
+}
+
+.ancrebis2 {
+  width: 100%;
+ }
+
+  }
