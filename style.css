@@ -21,10 +21,6 @@ body {
   margin: auto;
   padding-top: 2.5%;
 }
-#logoreservia {
-  margin-left: 4%;
-}
-
 header nav {
   display: flex;
   align-items: center;
@@ -85,7 +81,7 @@ header nav ul li a {
 .fas.fa-map-marker-alt {
   background-color: #f2f2f2;
   padding: 1rem 1.25rem;
-  border-radius: 5% 10%;
+  border-radius: 20px 0 0 20px;
   text-align: center;
 }
 .searchForm {
@@ -320,7 +316,6 @@ header nav ul li a {
   border-bottom: 2px;
   border-radius: 16px;
   width: 33%;
-  height: 670px;
 }
 .most-popular {
   display: flex;
@@ -331,12 +326,12 @@ header nav ul li a {
   margin-left: 42%;
 }
 .hosting-aside {
-  width: 96%;
-  margin: 1%;
+  width: 85%;
+  margin: auto;
   cursor: pointer;
   border-radius: 30px;
   background: white;
-  padding: 1%;
+  padding: 2%;
   display: flex;
   line-height: 1;
 }
@@ -346,7 +341,7 @@ header nav ul li a {
   width: 50%;
 }
 .img {
-  border-radius: 10px;
+  border-radius: 20px 0 0 20px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   height: 140px;
@@ -367,8 +362,7 @@ header nav ul li a {
   width: 100%;
   align-items: flex-start;
   flex-wrap: revert;
-  
-  }
+}
   /*port idem calanques*/
   .bloc1 {
   width: 25%;
@@ -389,7 +383,7 @@ header nav ul li a {
   height: 470px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
-}
+ }
 /*Images fort et iles l'une en dessous de l'autre*/
 
 .bloc2 {
@@ -397,34 +391,39 @@ header nav ul li a {
   flex-direction: column;
   justify-content: space-between;
   width: 25%;
-  }
-.fort {
-  width: 92%;
+ }
+.fort-lonchamp {    
+  
+  
+  
+  border-radius: 30px;
+
+  width: 90%;
   margin: 4%;
   cursor: pointer;
-  border-radius: 30px;
+  
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa;                      /*ombres*/
-  height: 100%;
+  height: 70%;
   }
- .fort-img {
+ .fort-lonchamp-img {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 250px;
+  height: 240px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
   }
-.iles {
-  width: 92%;
-  margin: 4%;
+.iles-notre-dame {
+  width: 90%;
+  margin: 20px 0px 20px 10px;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
- }
- .iles-du-Frioul-img {
+}
+ .iles-du-frioul-notre-dame-img {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
@@ -461,23 +460,15 @@ header nav ul li a {
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
  }
- .notre-dame-img {
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  height: 150px;
-  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 100%;
-}
  .long {
-  width: 90%;
+  width: 90%;         /*a supprimer*/
   margin: 20px 0px 20px 10px;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
  }
- .longchamp-img {
+ .longchamp-img {  /*a supprimer*/
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
@@ -544,15 +535,14 @@ header nav ul li a {
 
 @media all and (max-width: 800px) {
  
-  .header {
-    flex-wrap: wrap;
+.header {
+  flex-wrap: wrap;
   }
  
-
- .input-search {
+.input-search {
   width: 10rem; /*longueur border radius*/
 }
-  .searchfilters {
+.searchfilters {
   flex-direction: column;
   align-items: flex-start;
 }
