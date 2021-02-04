@@ -9,7 +9,7 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
- }
+}
 
 /* HEADER */
 
@@ -133,7 +133,7 @@ header nav ul li a {
   display: flex;
   align-items: center;
 }
-.fas.fa-money-bill-wave,                   
+.fas.fa-money-bill-wave,
 .fas.fa-child,
 .fas.fa-heart,
 .fas.fa-dog {
@@ -171,13 +171,13 @@ header nav ul li a {
 }
 .eco {
   width: 7rem; /*longueur border-radius*/
-  }
+}
 .familial {
   width: 5.5rem;
-  }
+}
 .romantique {
   width: 7rem;
-  }
+}
 .animaux {
   width: 10rem;
 }
@@ -189,7 +189,6 @@ header nav ul li a {
 }
 
 /*info*/
-
 
 .fas.fa-info {
   color: #0065fc;
@@ -220,7 +219,7 @@ header nav ul li a {
 
 #containerhebergement {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 #hosting1 {
   width: 66%;
@@ -229,7 +228,6 @@ header nav ul li a {
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border-bottom: 2px;
   border-radius: 16px;
-  height: 670px;
 }
 .marseille-hosting {
   margin: 0;
@@ -247,20 +245,21 @@ header nav ul li a {
   margin: 1%;
   cursor: pointer;
   border-radius: 30px;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   background: white;
   padding: 1%;
 }
 .hosting-img {
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
 .tarif1 {
-  line-height: 0.01;
+  line-height: 2em;
+  margin: 0;
 }
 .fas.fas.fa-star {
   color: #0065fc;
@@ -283,6 +282,7 @@ header nav ul li a {
   cursor: pointer;
   border-radius: 30px;
   background: white;
+  box-shadow: 2px 2px 5px #aaaaaa;
   padding: 1%;
 }
 .ancre {
@@ -293,7 +293,6 @@ header nav ul li a {
 .hosting2-img {
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   height: 100px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
@@ -323,16 +322,17 @@ header nav ul li a {
   padding-left: 5%;
 }
 .fas.fa-chart-line {
-  margin-left: 42%;
+  margin-left: 30%;
 }
 .hosting-aside {
+  display: flex;
   width: 85%;
   margin: auto;
   cursor: pointer;
   border-radius: 30px;
   background: white;
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   padding: 2%;
-  display: flex;
   line-height: 1;
 }
 .ancrebis1 {
@@ -343,7 +343,7 @@ header nav ul li a {
 .img {
   border-radius: 20px 0 0 20px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
+
   height: 140px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 90%;
@@ -354,7 +354,6 @@ header nav ul li a {
 
 /*Troisiéme et derniére section, activites*/
 
-
 .activity {
   display: flex;
   justify-content: space-between; /*Espacement identique*/
@@ -363,11 +362,11 @@ header nav ul li a {
   align-items: flex-start;
   flex-wrap: revert;
 }
-  /*port idem calanques*/
-  .bloc1 {
+/*port idem calanques*/
+.bloc1 {
   width: 25%;
-  }
-.port {
+}
+.port-calanques {
   width: 90%;
   margin: 20px 0px 20px 10px;
   cursor: pointer;
@@ -375,15 +374,14 @@ header nav ul li a {
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   padding-bottom: 1%;
- }
- .vieux-port-img {
+}
+.vieux-port-calanques-img {
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   height: 470px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
- }
+}
 /*Images fort et iles l'une en dessous de l'autre*/
 
 .bloc2 {
@@ -391,102 +389,76 @@ header nav ul li a {
   flex-direction: column;
   justify-content: space-between;
   width: 25%;
- }
-.fort-lonchamp {    
-  
-  
-  
+}
+.fort-lonchamp {
   border-radius: 30px;
-
   width: 90%;
   margin: 4%;
   cursor: pointer;
-  
   background: white;
-  box-shadow: 2px 2px 5px #aaaaaa;                      /*ombres*/
+  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   height: 70%;
-  }
- .fort-lonchamp-img {
+}
+.fort-lonchamp-img {
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 240px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
-  }
+}
 .iles-notre-dame {
-  width: 90%;
-  margin: 20px 0px 20px 10px;
+  width: 92%;
+  margin: 2%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
 }
- .iles-du-frioul-notre-dame-img {
+.iles-du-frioul-notre-dame-img {
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 140px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
-.calanques {
-  width: 90%;
-  margin: 20px 0px 20px 10px;
-  cursor: pointer;
-  border-radius: 30px;
-  background: white;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  padding-bottom: 1%;
- }
- .calanques-img {
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 470px;
-  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 100%;
-  }
 
 /*Images notre dame et parc lonchamps l'une en dessous de l'autre*/
- .notre {
+.notre {
   width: 90%;
   margin: 20px 0px 20px 10px;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
- }
- .long {
-  width: 90%;         /*a supprimer*/
+}
+.long {
+  width: 90%; /*a supprimer*/
   margin: 20px 0px 20px 10px;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
- }
- .longchamp-img {  /*a supprimer*/
+}
+.longchamp-img {
+  /*a supprimer*/
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
   height: 220px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
-  }
- .title {
- padding-left: 5%;
 }
-
+.title {
+  padding-left: 5%;
+}
 
 /*fOOTER*/
 
 .footer {
   display: flex;
   margin-top: 4%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .contenu-footer {
   display: flex;
@@ -496,7 +468,7 @@ header nav ul li a {
 }
 .bloc-footer {
   display: block;
-  height: fit-content;   /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
+  height: fit-content; /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
   width: 26%;
 }
 .ancrebis2 {
@@ -511,56 +483,27 @@ header nav ul li a {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 570px) {
-.logoreservia {
-  margin-left: 18px;}
-
-#haut {
-  display: block;
-  width: fit-content;
-  position: absolute;
-  padding: 26px 0px 8px 20px;
-  top: 0;
-  right: 5%;
- }
-#border-topi,
-#activit {
-  display: flex;
-  flex-direction: row;
-    border-top: 3px solid white;
-}
-#activit {
-  flex-direction: row;
-}
-
-@media all and (max-width: 800px) {
- 
-.header {
-  flex-wrap: wrap;
+@media all and (max-width: 1024px) {
+  .searchfilters {
   }
- 
-.input-search {
-  width: 10rem; /*longueur border radius*/
-}
-.searchfilters {
-  flex-direction: column;
-  align-items: flex-start;
-}
-.fas.fa-info {
-  width: 5%;
-  min-width: 7%;
-}
-.nombre {
-  width: 90%;
-}
-.row-location {
   
-}
-.more {
-  margin-top: 10%;
-}
-.activity {
-  display: flex;
+  .input-search {
+    width: 10rem; /*longueur border radius*/
+  }
+  .fas.fa-info {
+    width: 5%;
+    min-width: 7%;
+  }
+  .nombre {
+    width: 90%;
+  }
+  .row-location {
+  }
+  .more {
+    margin-top: 10%;
+  }
+  .activity {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
@@ -569,38 +512,119 @@ header nav ul li a {
     margin-top: 0%;
     border-radius: 0px;
     padding: 5%;
+  }
+  .bloc1,
+  .bloc2 {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  .vieux-port-calanques-img,
+  .fort-lonchamp-img,
+  .iles-du-frioul-notre-dame-img {
+    height: 150px;
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .contenu-footer {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
+  .bloc-footer {
+    width: 100%;
+    line-height: 3;
+  }
+  .ancrebis2 {
+    width: 100%;
+  }
 }
-.bloc1,
-.bloc2 {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
+@media screen and (max-width: 768px) {
+  .logoreservia {
+    margin-left: 18px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .searchfilters {
+    flex-wrap: wrap;
+  }
+.filtres {
+  width: 90%;
 }
+  #title-header {
+    display: flex;
+  }
 
-.vieux-port-img,
-.fort-img,
-.iles-du-Frioul-img,
-.calanques-img,
-.notre-dame-img,
-.longchamp-img {
-  height: 150px;
-}
-.footer {
-  width: 100%;
-  margin-right: 0%;
-}
-.contenu-footer {
-  display: block;
-  width: auto;
-  margin: auto;
-}
-.bloc-footer {
-  width: 100%;
-  line-height: 3;
-}
-
-.ancrebis2 {
-  width: 100%;
- }
+  .main {
+    width: 100%;
+  }
+  #hebergement {
 
   }
+  #haut {
+    display: block;
+    width: fit-content;
+    position: absolute;
+    padding: 26px 0px 8px 20px;
+    top: 0;
+    right: 5%;
+  }
+  #border-topi {
+    
+  }
+  #activit {
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid white;
+  }
+  #containerhebergement {
+    flex-direction: column-reverse;
+  }
+  #cadre-grey {
+    width: 100%;
+  }
+  #location {
+    display: none;
+  }
+  #activit {
+    flex-direction: row;
+  }
+  #hosting1 {
+    width: 100%;
+  }
+  .marseille-hosting {
+    margin-top: 10%;
+  }
+  .hosting,
+  .hosting2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+  .hosting2 {
+    width: 95%;
+  }
+  .cadre-grey {
+    width: 100%;
+  }
+  .hosting-aside {
+    width: 85%;
+    margin-bottom: 10%;
+  }
+  .fas.fa-chart-line {
+    margin-left: 25%;
+  }
+  .row-location {
+    flex-direction: column;
+  }
+  .row-location-bis {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 425px) {
+ 
+}
