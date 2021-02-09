@@ -111,7 +111,7 @@ header nav ul li a {
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 20px 20px 0;
   padding: 0 1.25rem;
   font-family: "Raleway", "Sans serif";
   font-size: 1rem;
@@ -125,9 +125,6 @@ header nav ul li a {
   align-items: center; /*Aligne tout*/
   max-width: 100%;
   margin-top: 2%; /*espace avec Marseille*/
-}
-.filtres {
-  margin-top: inherit; /*Heritage qui provient toujours de l'element parent meme si cet element n'est pas le bloc englobant*/
 }
 .fasfa {
   display: flex;
@@ -145,9 +142,9 @@ header nav ul li a {
   cursor: pointer;
   justify-content: center; /*centre logo money dans le cercle*/
   position: relative;
-  left: 36px; /*Permet d'inserer le logo dans economique*/
-  width: 54px; /*De width à border radius pour faire un cercle*/
-  height: 50px;
+  left: 59px; /*Permet d'inserer le logo dans economique*/
+  width: 59px; /*De width à border radius pour faire un cercle*/
+  height: 54px;
   border-radius: 28px;
 }
 .eco,
@@ -159,11 +156,9 @@ header nav ul li a {
   cursor: pointer;
   align-items: center;
   border-radius: 30px;
-  border-bottom: #f2f2f2 0.2rem solid;
-  border-top: #f2f2f2 0.2rem solid;
-  border-right: #f2f2f2 0.2rem solid;
-  padding-left: 2.5rem; /*marge à l'interieur des border-radius*/
-  height: 45px;
+  border: #f2f2f2 0.2rem solid;
+  padding-left: 4.5rem; /*marge à l'interieur des border-radius*/
+  height: 49px;
   justify-content: center; /*centre le mot economique dans le border radius*/
   font-size: 1.1rem; /*epaisseur caractere*/
   font-weight: bold; /*graisse utilisée*/
@@ -186,6 +181,7 @@ header nav ul li a {
 .romantique:hover,
 .animaux:hover {
   background-color: #deebff;
+  border: #deebff 0.2rem solid;
 }
 
 /*info*/
@@ -228,6 +224,7 @@ header nav ul li a {
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border-bottom: 2px;
   border-radius: 16px;
+  padding: 3%;
 }
 .marseille-hosting {
   margin: 0;
@@ -250,7 +247,7 @@ header nav ul li a {
   padding: 1%;
 }
 .hosting-img {
-  border-radius: 10px;
+  border-radius: 30px 30px 0 0;
   cursor: pointer;
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 100px;
@@ -267,35 +264,10 @@ header nav ul li a {
 .fas.fas.fa-star[data-active="false"] {
   color: #d7dbdf;
 }
-
-/*Toujours deuxiéme section: trois derniéres images horizontales*/
-
-.row-location-bis {
-  display: flex;
-  flex-direction: row; /*Defini automatiquement, se mettent a coté horizontalement*/
-  align-items: center;
-  justify-content: space-evenly; /*Espacement identique*/
-}
-.hosting2 {
-  width: 29%;
-  margin: 1%;
-  cursor: pointer;
-  border-radius: 30px;
-  background: white;
-  box-shadow: 2px 2px 5px #aaaaaa;
-  padding: 1%;
-}
 .ancre {
   color: black;
   text-decoration: none;
   display: block;
-}
-.hosting2-img {
-  border-radius: 10px;
-  cursor: pointer;
-  height: 100px;
-  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 100%;
 }
 .more {
   font-size: 1.2em;
@@ -343,7 +315,6 @@ header nav ul li a {
 .img {
   border-radius: 20px 0 0 20px;
   cursor: pointer;
-
   height: 140px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 90%;
@@ -359,7 +330,7 @@ header nav ul li a {
   justify-content: space-between; /*Espacement identique*/
   padding-bottom: 3px;
   width: 100%;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: revert;
 }
 /*port idem calanques*/
@@ -368,7 +339,7 @@ header nav ul li a {
 }
 .port-calanques {
   width: 90%;
-  margin: 20px 0px 20px 10px;
+  margin: 5%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
@@ -376,7 +347,7 @@ header nav ul li a {
   padding-bottom: 1%;
 }
 .vieux-port-calanques-img {
-  border-radius: 10px;
+  border-radius: 30px 30px 0 0;
   cursor: pointer;
   height: 470px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
@@ -393,59 +364,32 @@ header nav ul li a {
 .fort-lonchamp {
   border-radius: 30px;
   width: 90%;
-  margin: 4%;
+  margin: 5%;
   cursor: pointer;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-  height: 70%;
 }
 .fort-lonchamp-img {
-  border-radius: 10px;
+  border-radius: 30px 30px 0 0;
   cursor: pointer;
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
-  height: 240px;
+  height: 230px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
 .iles-notre-dame {
-  width: 92%;
-  margin: 2%;
+  width: 90%;
+  margin: 5%;
   cursor: pointer;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
 }
 .iles-du-frioul-notre-dame-img {
-  border-radius: 10px;
+  border-radius: 30px 30px 0 0;
   cursor: pointer;
   /*Dimension image, width et height, fonctionne que ds cet order-ci*/
   height: 140px;
-  object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
-  width: 100%;
-}
-
-/*Images notre dame et parc lonchamps l'une en dessous de l'autre*/
-.notre {
-  width: 90%;
-  margin: 20px 0px 20px 10px;
-  cursor: pointer;
-  border-radius: 30px;
-  background: white;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-}
-.long {
-  width: 90%; /*a supprimer*/
-  margin: 20px 0px 20px 10px;
-  cursor: pointer;
-  border-radius: 30px;
-  background: white;
-  box-shadow: 2px 2px 5px #aaaaaa; /*ombres*/
-}
-.longchamp-img {
-  /*a supprimer*/
-  border-radius: 10px;
-  cursor: pointer;
-  height: 220px;
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 100%;
 }
@@ -484,26 +428,68 @@ header nav ul li a {
 /*MEDIA QUERIES*/
 
 @media all and (max-width: 1024px) {
-  .searchfilters {
+  .main {
+    width: 100%;
   }
-  
-  .input-search {
-    width: 10rem; /*longueur border radius*/
+  .eco {
+    width: 6rem; 
   }
-  .fas.fa-info {
-    width: 5%;
-    min-width: 7%;
+  .familial {
+    width: 4rem;
+  }
+  .romantique {
+    width: 6rem;
+  }
+  .animaux {
+    width: 9rem;
+  }
+  .eco:hover,
+  .familial:hover,
+  .romantique:hover,
+  .animaux:hover {
+    background-color: #deebff;
+    border: #deebff 0.2rem solid;
   }
   .nombre {
     width: 90%;
   }
-  .row-location {
-  }
   .more {
     margin-top: 10%;
   }
+  #containerhebergement {
+    flex-direction: column-reverse;
+  }
+  #cadre-grey {
+    width: 100%;
+  }
+  #location {
+    background-color: white
+  }
+  #activit {
+    flex-direction: row;
+  }
+  #hosting1 {
+    width: 100%;
+  }
+  .hosting {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+  .cadre-grey {
+    width: 100%;
+  }
+  .hosting-aside {
+    width: 85%;
+    margin-bottom: 10%;
+  }
+  .fas.fa-chart-line {
+    margin-left: 25%;
+  }
+  .row-location {
+    flex-direction: column;
+  }
   .activity {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
@@ -515,14 +501,17 @@ header nav ul li a {
   }
   .bloc1,
   .bloc2 {
-    width: auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .port-calanques {
+
   }
   .vieux-port-calanques-img,
   .fort-lonchamp-img,
   .iles-du-frioul-notre-dame-img {
-    height: 150px;
+    height: 220px;
     width: 100%;
   }
   .footer {
@@ -543,88 +532,80 @@ header nav ul li a {
   }
 }
 @media screen and (max-width: 768px) {
-  .logoreservia {
-    margin-left: 18px;
-  }
   .header {
     flex-wrap: wrap;
+    }
+  .logoreservia {
+    margin-left: 18px;
+    order: 0;
+  }
+  .input-search {
+    width: 10rem; /*longueur border radius*/
   }
   .searchfilters {
     flex-wrap: wrap;
   }
-.filtres {
-  width: 90%;
-}
+  .filtres {
+    width: 90%;
+  }
   #title-header {
     display: flex;
   }
-
-  .main {
-    width: 100%;
-  }
+ 
+  
   #hebergement {
 
   }
   #haut {
-    display: block;
+    order: 1;
     width: fit-content;
     position: absolute;
     padding: 26px 0px 8px 20px;
     top: 0;
-    right: 5%;
+    }
+ #border-topi {
+    order: 2;
+    border-top: none;
+    margin-left: -40%;
+    border-color:#0065FC; 
   }
-  #border-topi {
-    
+  #black {
+    order: 3;
+    border-top: none;
   }
-  #activit {
-    display: flex;
-    flex-direction: row;
-    border-top: 3px solid white;
+  .border-top:hover {
+    border-top: none;
   }
-  #containerhebergement {
-    flex-direction: column-reverse;
-  }
-  #cadre-grey {
-    width: 100%;
-  }
-  #location {
-    display: none;
-  }
-  #activit {
-    flex-direction: row;
-  }
-  #hosting1 {
-    width: 100%;
-  }
-  .marseille-hosting {
-    margin-top: 10%;
-  }
-  .hosting,
-  .hosting2 {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 4%;
-  }
-  .hosting2 {
-    width: 95%;
-  }
-  .cadre-grey {
-    width: 100%;
-  }
-  .hosting-aside {
-    width: 85%;
-    margin-bottom: 10%;
-  }
-  .fas.fa-chart-line {
-    margin-left: 25%;
-  }
-  .row-location {
-    flex-direction: column;
-  }
-  .row-location-bis {
-    flex-direction: column;
-  }
+  
+  
 }
 @media all and (max-width: 425px) {
- 
+  .fas.fa-info {
+    width: 5%;
+    min-width: 7%;
+  }
+  .fasfa {
+    margin-left: -11%;
+  }
+  #cadre-grey {
+    width: 120%;
+  }
+.hosting-aside {
+  width: 120%;
+  margin-left: 1%;
+}
+
+.hosting {
+  width: 120%;
+  margin-left: 1%;
+}
+.hosting-img {
+  width: 100%;
+}
+.port-calanques,
+.fort-lonchamp,
+.iles-notre-dame {
+  width: 120%;
+  margin-left: 1%;
+}
 }
