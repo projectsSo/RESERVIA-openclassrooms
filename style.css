@@ -21,6 +21,9 @@ body {
   margin: auto;
   padding-top: 2.5%;
 }
+#trouvez {
+  margin-bottom: 5px;
+}
 header nav {
   display: flex;
   align-items: center;
@@ -64,11 +67,7 @@ header nav ul li a {
   justify-content: center;
 }
 .centre {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 4em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-top: 0;
 }
 .searchForm {
   display: inline-flex;
@@ -99,10 +98,8 @@ header nav ul li a {
   width: 14rem; /*longueur border radius*/
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Raleway", "Sans serif";
 }
 .input-search::placeholder {
-  font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   color: #00000069;
 }
@@ -113,7 +110,6 @@ header nav ul li a {
   border: none;
   border-radius: 0 20px 20px 0;
   padding: 0 1.25rem;
-  font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   cursor: pointer;
 }
@@ -136,7 +132,6 @@ header nav ul li a {
 .fas.fa-dog {
   display: flex;
   align-items: center;
-  margin-left: 0.01%; /*Position par rapport au mot filtres*/
   background-color: #deebff;
   color: blue;
   cursor: pointer;
@@ -157,12 +152,12 @@ header nav ul li a {
   align-items: center;
   border-radius: 30px;
   border: #f2f2f2 0.2rem solid;
-  padding-left: 4.5rem; /*marge à l'interieur des border-radius*/
+  padding-left: 59px; /*marge à l'interieur des border-radius*/
   height: 49px;
   justify-content: center; /*centre le mot economique dans le border radius*/
   font-size: 1.1rem; /*epaisseur caractere*/
   font-weight: bold; /*graisse utilisée*/
-  font-family: "Raleway", "Sans serif";
+  padding-right: 10px;
 }
 .eco {
   width: 7rem; /*longueur border-radius*/
@@ -218,13 +213,13 @@ header nav ul li a {
   justify-content: space-between;
 }
 #hosting1 {
-  width: 66%;
-}
-#location {
+  width: 62%;
   background-color: #f2f2f2; /* Arriére-plan gris*/
   border-bottom: 2px;
   border-radius: 16px;
-  padding: 3%;
+  padding: 2%;
+}
+#location {
 }
 .marseille-hosting {
   margin: 0;
@@ -258,10 +253,10 @@ header nav ul li a {
   line-height: 2em;
   margin: 0;
 }
-.fas.fas.fa-star {
+.fas.fas.fa-star1 {
   color: #0065fc;
 }
-.fas.fas.fa-star[data-active="false"] {
+.fas.fas.fa-star1[data-active="false"] {
   color: #d7dbdf;
 }
 .ancre {
@@ -272,6 +267,8 @@ header nav ul li a {
 .more {
   font-size: 1.2em;
   margin: auto;
+  margin: 0;
+  padding: 20px;
 }
 
 /*ASIDE*/
@@ -286,12 +283,13 @@ header nav ul li a {
   border: 20px;
   border-bottom: 2px;
   border-radius: 16px;
-  width: 33%;
+  width: 27%;
+  padding: 3%;
 }
 .most-popular {
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  justify-content: space-between;
 }
 .fas.fa-chart-line {
   margin-left: 30%;
@@ -319,12 +317,22 @@ header nav ul li a {
   object-fit: cover; /*Façon dont l'image s'adapte à son conteneur*/
   width: 90%;
 }
-.tarif {
-  margin-top: 0.1%;
+.fas.fas.fa-star2 {
+  color: #0065fc;
+}
+.fas.fas.fa-star2[data-active="false"] {
+  color: #d7dbdf;
+}
+.tarif { /*A SUPPRIMER*/
+  
 }
 
 /*Troisiéme et derniére section, activites*/
 
+#activites-marseille {
+  margin: 0;
+  padding: 20px;
+}
 .activity {
   display: flex;
   justify-content: space-between; /*Espacement identique*/
@@ -431,8 +439,14 @@ header nav ul li a {
   .main {
     width: 100%;
   }
+  #first-section {
+    padding: 5%;
+  }
+  .searchfilters {
+    flex-wrap: wrap;
+  }
   .eco {
-    width: 6rem; 
+    width: 6rem;
   }
   .familial {
     width: 4rem;
@@ -453,9 +467,6 @@ header nav ul li a {
   .nombre {
     width: 90%;
   }
-  .more {
-    margin-top: 10%;
-  }
   #containerhebergement {
     flex-direction: column-reverse;
   }
@@ -463,25 +474,39 @@ header nav ul li a {
     width: 100%;
   }
   #location {
-    background-color: white
+    background-color: white;
   }
   #activit {
     flex-direction: row;
   }
   #hosting1 {
     width: 100%;
+    background-color: white;
   }
   .hosting {
     width: 90%;
     margin-left: 5%;
     margin-top: 4%;
   }
+  .hosting-img {
+    height: 380px;
+  }
   .cadre-grey {
     width: 100%;
   }
   .hosting-aside {
-    width: 85%;
+    width: 100%;
     margin-bottom: 10%;
+  }
+  .most-popular {
+    margin: 0;
+    padding: 20px;
+  }
+  .fas.fas.fa-star2 {
+    padding-top: 55%;
+  }
+  .img {
+    height: 230px;
   }
   .fas.fa-chart-line {
     margin-left: 25%;
@@ -505,9 +530,6 @@ header nav ul li a {
     height: 100%;
     object-fit: cover;
   }
-  .port-calanques {
-
-  }
   .vieux-port-calanques-img,
   .fort-lonchamp-img,
   .iles-du-frioul-notre-dame-img {
@@ -517,6 +539,7 @@ header nav ul li a {
   .footer {
     width: 100%;
     margin-right: 0%;
+    padding: 4%
   }
   .contenu-footer {
     display: block;
@@ -534,49 +557,53 @@ header nav ul li a {
 @media screen and (max-width: 768px) {
   .header {
     flex-wrap: wrap;
-    }
+    align-items: flex-start;
+  }
   .logoreservia {
     margin-left: 18px;
     order: 0;
   }
-  .input-search {
-    width: 10rem; /*longueur border radius*/
+  header nav ul li a {
+    
   }
-  .searchfilters {
-    flex-wrap: wrap;
+ .input-search {
+      width: 12rem;
   }
   .filtres {
     width: 90%;
   }
   #title-header {
     display: flex;
+    flex-wrap: wrap;
   }
- 
-  
-  #hebergement {
-
-  }
-  #haut {
-    order: 1;
-    width: fit-content;
-    position: absolute;
-    padding: 26px 0px 8px 20px;
-    top: 0;
-    }
- #border-topi {
+  #order2 {
     order: 2;
+    width: 50%;
+  }
+  #order3 {
+    order: 3;
+  }
+  #order1 {
+    order: 1;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 50px;
+  }
+
+  #hebergement {
+  }
+  #border-topi {
     border-top: none;
-    margin-left: -40%;
-    border-color:#0065FC; 
+    border-bottom: 5px solid #0065fc;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
   }
   #black {
-    order: 3;
     border-top: none;
   }
   .border-top:hover {
     border-top: none;
   }
-  
   
 }
 @media all and (max-width: 425px) {
@@ -590,22 +617,32 @@ header nav ul li a {
   #cadre-grey {
     width: 120%;
   }
-.hosting-aside {
-  width: 120%;
-  margin-left: 1%;
-}
-
-.hosting {
-  width: 120%;
-  margin-left: 1%;
-}
-.hosting-img {
-  width: 100%;
-}
-.port-calanques,
-.fort-lonchamp,
-.iles-notre-dame {
-  width: 120%;
-  margin-left: 1%;
+  .hosting-aside {
+    width: 85%;
+  }
+  .hosting {
+    width: 100%;
+    padding: 5%;
+  }
+  .hosting-img {
+    width: 100%;
+    height: 180px;
+  }
+  #activites {
+    width: 100%;
+  }
+  .port-calanques,
+  .fort-lonchamp,
+  .iles-notre-dame {
+    width: 100%;
+    padding: 5%;
+  }
+  .vieux-port-calanques-img,
+  .fort-lonchamp-img,
+  .iles-du-frioul-notre-dame-img {
+    width: 100%;
+  }
+  .footer {
+    padding: 13%;
 }
 }
