@@ -323,9 +323,6 @@ header nav ul li a {
 .fas.fas.fa-star2[data-active="false"] {
   color: #d7dbdf;
 }
-.tarif { /*A SUPPRIMER*/
-  
-}
 
 /*Troisiéme et derniére section, activites*/
 
@@ -422,6 +419,8 @@ header nav ul li a {
   display: block;
   height: fit-content; /*la + gde des valeurs entre la hauteur minimale intrinseque preferee et la hauteur dispo*/
   width: 26%;
+  margin: 0;
+  padding: 20px;
 }
 .ancrebis2 {
   color: black;
@@ -493,9 +492,9 @@ header nav ul li a {
   }
   .cadre-grey {
     width: 100%;
+    padding: 5%;
   }
   .hosting-aside {
-    width: 100%;
     margin-bottom: 10%;
   }
   .most-popular {
@@ -503,10 +502,10 @@ header nav ul li a {
     padding: 20px;
   }
   .fas.fas.fa-star2 {
-    padding-top: 55%;
+    padding-top: 80%;
   }
   .img {
-    height: 230px;
+    height: 280px;
   }
   .fas.fa-chart-line {
     margin-left: 25%;
@@ -518,7 +517,6 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    width: auto;
     margin-right: 0%;
     margin-top: 0%;
     border-radius: 0px;
@@ -539,12 +537,12 @@ header nav ul li a {
   .footer {
     width: 100%;
     margin-right: 0%;
-    padding: 4%
+    padding: 4%;
   }
   .contenu-footer {
     display: block;
     width: auto;
-    margin: auto;
+    margin: 0;
   }
   .bloc-footer {
     width: 100%;
@@ -564,10 +562,9 @@ header nav ul li a {
     order: 0;
   }
   header nav ul li a {
-    
   }
- .input-search {
-      width: 12rem;
+  .input-search {
+    width: 10.6rem;
   }
   .filtres {
     width: 90%;
@@ -604,7 +601,6 @@ header nav ul li a {
   .border-top:hover {
     border-top: none;
   }
-  
 }
 @media all and (max-width: 425px) {
   .fas.fa-info {
@@ -644,5 +640,6 @@ header nav ul li a {
   }
   .footer {
     padding: 13%;
-}
+  }
+  
 }
