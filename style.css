@@ -17,21 +17,37 @@ body {
   width: 90%;
   z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
   display: flex;
-  justify-content: space-between;
-  margin: auto;
-  padding-top: 2.5%;
 }
-#trouvez {
-  margin-bottom: 5px;
-}
-header nav {
+#title-header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  /*justify-content: flex-end*/
+}
+#logoreservia {
+  order: 0;
+ margin-right: 50%;
+ align-self: flex-end;
+ padding-left: 5%;
 }
 #border-topi {
   border-top: 3px solid;
   color: #0065fc;
+  order: 1;
+  text-align: right;
+  padding-top: 1%;
+}
+#black {
+  order: 2;
+  color: black;
+}
+.border-top {
+  text-align: right;
+  padding-top: 1%;
+}
+#order {
+  order: 3;
 }
 .border-top:hover {
   border-top: 3px solid;
@@ -40,24 +56,18 @@ header nav {
 .border-top[data-active="true"] {
   border-top-color: #0065fc;
 }
-header nav ul li {
-  list-style-type: none; /*supprime les petits points*/
-  display: inline-block;
-}
-header nav ul li a {
+header nav a {
   color: #0065fc;
   text-decoration: none; /*supprime les traits en dessous*/
-  padding: 50px;
+  display: inline-block;
 }
-#black {
-  color: black;
-}
+
 
 /*Premiere section*/
 
 .main {
   margin: auto;
-  display: block; /*a verifier*/ /*valeur par défaut, elements les un en dessous de autres, oblige à revenir à la ligne*/
+  display: block;  /*valeur par défaut, elements les un en dessous de autres, oblige à revenir à la ligne*/
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
   width: 90%;
 }
@@ -65,6 +75,9 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#trouvez {
+  margin-bottom: 5px;
 }
 .centre {
   margin-top: 0;
@@ -112,6 +125,20 @@ header nav ul li a {
   padding: 0 1.25rem;
   font-size: 1rem;
   cursor: pointer;
+  display: block;
+}
+
+.fas.fa-search {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+  text-align: center;
 }
 
 /*search-filters*/
@@ -296,7 +323,7 @@ header nav ul li a {
 }
 .hosting-aside {
   display: flex;
-  width: 85%;
+  width: 95%;
   margin: auto;
   cursor: pointer;
   border-radius: 30px;
@@ -470,7 +497,7 @@ header nav ul li a {
     flex-direction: column-reverse;
   }
   #cadre-grey {
-    width: 100%;
+    width: 94%;
   }
   #location {
     background-color: white;
@@ -479,7 +506,7 @@ header nav ul li a {
     flex-direction: row;
   }
   #hosting1 {
-    width: 100%;
+    width: 96%;
     background-color: white;
   }
   .hosting {
@@ -521,6 +548,7 @@ header nav ul li a {
     margin-top: 0%;
     border-radius: 0px;
     padding: 5%;
+    width: 90%;
   }
   .bloc1,
   .bloc2 {
@@ -535,7 +563,7 @@ header nav ul li a {
     width: 100%;
   }
   .footer {
-    width: 100%;
+    width: 92%;
     margin-right: 0%;
     padding: 4%;
   }
@@ -556,44 +584,43 @@ header nav ul li a {
   .header {
     flex-wrap: wrap;
     align-items: flex-start;
+    padding: 0%;
   }
-  .logoreservia {
-    margin-left: 18px;
+  #title-header {
+    flex-wrap: wrap;
+  }
+  #logoreservia {
+    margin-right: auto;
     order: 0;
   }
-  header nav ul li a {
+  #border-topi {
+      order: 2;
+      border-top: none;
+      border-bottom: 5px solid #0065fc;
+      padding-bottom: 10px;
+      width: 50%;
+      text-align: center;
+    }
+  #black {
+    order: 3;
+    width: 50%;
+    text-align: center;
   }
-  .input-search {
-    width: 10.6rem;
+  #order {
+    order: 1;
+    width: 50%;
+    text-align: right;
+  }
+ .button-search {
+    display: none;
+  }
+  .fas.fa-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .filtres {
     width: 90%;
-  }
-  #title-header {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #order2 {
-    order: 2;
-    width: 50%;
-  }
-  #order3 {
-    order: 3;
-  }
-  #order1 {
-    order: 1;
-    width: 100%;
-    text-align: right;
-    margin-bottom: 50px;
-  }
-
-  #hebergement {
-  }
-  #border-topi {
-    border-top: none;
-    border-bottom: 5px solid #0065fc;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
   }
   #black {
     border-top: none;
@@ -603,6 +630,7 @@ header nav ul li a {
   }
 }
 @media all and (max-width: 425px) {
+  
   .fas.fa-info {
     width: 5%;
     min-width: 7%;
@@ -610,14 +638,11 @@ header nav ul li a {
   .fasfa {
     margin-left: -11%;
   }
-  #cadre-grey {
-    width: 120%;
-  }
   .hosting-aside {
     width: 85%;
   }
   .hosting {
-    width: 100%;
+    width: 90%;
     padding: 5%;
   }
   .hosting-img {
@@ -630,7 +655,7 @@ header nav ul li a {
   .port-calanques,
   .fort-lonchamp,
   .iles-notre-dame {
-    width: 100%;
+    width: 80%;
     padding: 5%;
   }
   .vieux-port-calanques-img,
@@ -638,8 +663,6 @@ header nav ul li a {
   .iles-du-frioul-notre-dame-img {
     width: 100%;
   }
-  .footer {
-    padding: 13%;
-  }
+  
   
 }
