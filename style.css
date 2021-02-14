@@ -243,8 +243,6 @@ header nav a {
   border-radius: 16px;
   padding: 2%;
 }
-#location {
-}
 .marseille-hosting {
   margin: 0;
   padding: 20px;
@@ -320,7 +318,7 @@ header nav a {
 }
 .hosting-aside {
   display: flex;
-  width: 95%;
+  width: 96%;
   margin: auto;
   cursor: pointer;
   border-radius: 30px;
@@ -507,16 +505,11 @@ header nav a {
     background-color: white;
   }
   .hosting {
-    width: 90%;
-    margin-left: 5%;
+    width: 96%;
     margin-top: 4%;
   }
   .hosting-img {
     height: 280px;
-  }
-  .cadre-grey {
-    width: 100%;
-    padding: 5%;
   }
   .hosting-aside {
     margin-bottom: 10%;
@@ -544,8 +537,6 @@ header nav a {
     margin-right: 0%;
     margin-top: 0%;
     border-radius: 0px;
-    padding: 5%;
-    width: 90%;
   }
   .bloc1,
   .bloc2 {
@@ -636,26 +627,22 @@ header nav a {
     margin-left: -11%;
   }
   .hosting-aside {
-    width: 85%;
+    width: 96%;
   }
  .hosting-img {
     width: 100%;
     height: 180px;
   }
-  #activites {
-    width: 100%;
+  .activity {
+    width: 96%;
+    padding: 2%;
   }
-  .port-calanques,
-  .fort-lonchamp,
-  .iles-notre-dame {
-    width: 80%;
-    padding: 5%;
+  .port-calanques, .fort-lonchamp, .iles-notre-dame {
+    width: 95%;
   }
   .vieux-port-calanques-img,
   .fort-lonchamp-img,
   .iles-du-frioul-notre-dame-img {
     width: 100%;
   }
-  
-  
 }
