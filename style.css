@@ -124,7 +124,6 @@ header nav a {
   cursor: pointer;
   display: block;
 }
-
 .fas.fa-search {
   background-color: #0065fc;
   color: white;
@@ -598,7 +597,8 @@ header nav a {
     order: 1;
     width: 50%;
     text-align: right;
-  }
+    padding-top: 3%;
+    }
  .button-search {
     display: none;
   }
@@ -618,7 +618,9 @@ header nav a {
   }
 }
 @media all and (max-width: 425px) {
-  
+ .input-search {
+   width: 10.5rem;
+ }
   .fas.fa-info {
     width: 5%;
     min-width: 7%;
