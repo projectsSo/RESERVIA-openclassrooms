@@ -25,9 +25,9 @@ body {
 }
 #logoreservia {
   order: 0;
- margin-right: 50%;
- align-self: flex-end;
- padding-left: 5%;
+  margin-right: 50%;
+  align-self: flex-end;
+  padding-left: 5%;
 }
 #border-topi {
   border-top: 3px solid;
@@ -59,12 +59,11 @@ header nav a {
   text-decoration: none; /*supprime les traits en dessous*/
 }
 
-
 /*Premiere section*/
 
 .main {
   margin: auto;
-  display: block;  /*valeur par défaut, elements les un en dessous de autres, oblige à revenir à la ligne*/
+  display: block; /*valeur par défaut, elements les un en dessous de autres, oblige à revenir à la ligne*/
   justify-content: flex-start; /*Indique la façon dt l'espace doit etre réparti entre et autour des élements selon l'axe principal*/
   width: 90%;
 }
@@ -581,13 +580,13 @@ header nav a {
     order: 0;
   }
   #border-topi {
-      order: 2;
-      border-top: none;
-      border-bottom: 5px solid #0065fc;
-      padding-bottom: 10px;
-      width: 50%;
-      text-align: center;
-    }
+    order: 2;
+    border-top: none;
+    border-bottom: 5px solid #0065fc;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+  }
   #black {
     order: 3;
     width: 50%;
@@ -598,8 +597,8 @@ header nav a {
     width: 50%;
     text-align: right;
     padding-top: 3%;
-    }
- .button-search {
+  }
+  .button-search {
     display: none;
   }
   .fas.fa-search {
@@ -618,9 +617,9 @@ header nav a {
   }
 }
 @media all and (max-width: 425px) {
- .input-search {
-   width: 10.5rem;
- }
+  .input-search {
+    width: 10.5rem;
+  }
   .fas.fa-info {
     width: 5%;
     min-width: 7%;
@@ -631,7 +630,7 @@ header nav a {
   .hosting-aside {
     width: 96%;
   }
- .hosting-img {
+  .hosting-img {
     width: 100%;
     height: 180px;
   }
@@ -639,7 +638,9 @@ header nav a {
     width: 96%;
     padding: 2%;
   }
-  .port-calanques, .fort-lonchamp, .iles-notre-dame {
+  .port-calanques,
+  .fort-lonchamp,
+  .iles-notre-dame {
     width: 95%;
   }
   .vieux-port-calanques-img,
