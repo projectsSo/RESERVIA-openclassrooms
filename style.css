@@ -356,7 +356,6 @@ header nav a {
   padding-bottom: 3px;
   width: 100%;
   align-items: stretch;
-  flex-wrap: revert;
 }
 /*port idem calanques*/
 .bloc1 {
@@ -480,8 +479,7 @@ header nav a {
   .familial:hover,
   .romantique:hover,
   .animaux:hover {
-    background-color: #deebff;
-    border: #deebff 0.2rem solid;
+    border:  #deebff 0.2rem solid;
   }
   .nombre {
     width: 90%;
