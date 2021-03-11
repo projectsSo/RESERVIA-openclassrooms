@@ -13,7 +13,7 @@ body {
 
 /* HEADER */
 
-.header {
+#header {
   width: 90%;
   z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
   display: flex;
