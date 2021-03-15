@@ -13,7 +13,7 @@ body {
 
 /* HEADER */
 
-#header {
+.header {
   width: 90%;
   z-index: 10; /*precise l'empilement de l'element sur l'axe vertical*/
   display: flex;
@@ -48,6 +48,8 @@ body {
   order: 3;
 }
 .border-top:hover {
+  border: white;
+  
   border-top: 3px solid;
   color: #0065fc;
 }
@@ -182,13 +184,13 @@ header nav a {
   padding-right: 10px;
 }
 .eco {
-  width: 7rem; /*longueur border-radius*/
+  width: 8rem; /*longueur border-radius*/
 }
 .familial {
-  width: 5.5rem;
+  width: 6rem;
 }
 .romantique {
-  width: 7rem;
+  width: 8rem;
 }
 .animaux {
   width: 10rem;
@@ -462,18 +464,6 @@ header nav a {
   }
   .searchfilters {
     flex-wrap: wrap;
-  }
-  .eco {
-    width: 6rem;
-  }
-  .familial {
-    width: 4rem;
-  }
-  .romantique {
-    width: 6rem;
-  }
-  .animaux {
-    width: 9rem;
   }
   .eco:hover,
   .familial:hover,
